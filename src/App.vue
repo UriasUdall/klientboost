@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <img style="width:12.5rem"  src="./assets/logo.png">
     <router-view/>
   </div>
 </template>
@@ -8,7 +8,30 @@
 <script>
 export default {
   name: 'App'
-}
+};
+
+/* 媒体查询 */
+(function (doc, win) {
+  var docEl = doc.documentElement || doc.body,
+    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+    recalc = function () {
+      var clientWidth = docEl.clientWidth;
+      if (!clientWidth) return;
+      if (clientWidth <= 768) {
+        docEl.style.fontSize = '12px';
+      } else if (clientWidth > 768 && clientWidth <= 1366) {
+        docEl.style.fontSize = ( 12 + (clientWidth - 768) * (4.0/598))  + 'px';
+      }else if (clientWidth > 1366 &&  clientWidth <= 1920) {
+        docEl.style.fontSize = ( 16 + (clientWidth -1366) * (4.0/554)) + 'px';
+      }else if(clientWidth > 1920) {
+        docEl.style.fontSize = '20px';
+      }
+    };
+  if (!doc.addEventListener) return;
+  win.addEventListener(resizeEvt, recalc, false);
+  doc.addEventListener('DOMContentLoaded', recalc, false);
+})(document, window);
+
 </script>
 
 <style>
