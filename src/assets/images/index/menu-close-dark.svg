@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="17px" height="14.219px" viewBox="0 0 17 14.219" enable-background="new 0 0 17 14.219" xml:space="preserve">
+<g id="Layer_1_1_" display="none">
+	
+		<rect x="-50.074" y="-54.647" display="inline" fill="#B0516C" stroke="#FFFFFF" stroke-miterlimit="10" width="126.506" height="119.397"/>
+</g>
+<g id="Bars" display="none">
+	
+		<line display="inline" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="1.308" y1="1.099" x2="15.57" y2="1.099"/>
+	
+		<line display="inline" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="1.308" y1="7.109" x2="15.57" y2="7.109"/>
+	
+		<line display="inline" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="1.308" y1="13.121" x2="15.57" y2="13.121"/>
+</g>
+<g id="X" display="none">
+	<path id="x-mark-4-icon" display="inline" fill="#6ADAF7" d="M15.504,7.114c0,3.868-3.136,7.003-7.004,7.003
+		s-7.003-3.135-7.003-7.003c0-3.869,3.134-7.003,7.003-7.003S15.504,3.245,15.504,7.114z M14.143,7.114
+		c0-3.118-2.521-5.646-5.643-5.646S2.856,3.995,2.856,7.114c0,3.118,2.524,5.644,5.644,5.644S14.143,10.232,14.143,7.114z
+		 M10.855,10.734L8.567,8.445l-2.289,2.289L5.049,9.505l2.288-2.29L5.049,4.927l1.23-1.229l2.288,2.288l2.289-2.29l1.229,1.23
+		L9.797,7.215l2.289,2.29L10.855,10.734z"/>
+</g>
+<polygon fill="#6ADAF7" points="15.035,1.949 13.621,0.535 8.461,5.695 3.379,0.613 1.965,2.027 7.047,7.109 1.965,12.191 
+	3.379,13.605 8.461,8.523 13.621,13.684 15.035,12.27 9.875,7.109 "/>
+</svg>
