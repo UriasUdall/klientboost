@@ -1,6 +1,37 @@
-*{padding: 0;margin: 0;}
-ul li{list-style: none;}
-a{text-decoration: none;color: #000;}
+* {
+    padding: 0;
+    margin: 0;
+}
 
-.fixed{position: fixed;}
-.tc{text-align: center;}
+body {
+    padding: 0;
+    margin: 0;
+    color: #30383f;
+    font-family: Lato, Helvetica Neue, Helvetica;
+    font-size: 13px;
+    min-width: 300px;
+    min-height: 100%;
+    background: #f1f3f4;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.tc {
+    text-align: center;
+}
+
+
+.block{
+    display: block!important;
+}
