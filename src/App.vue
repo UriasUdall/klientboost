@@ -1,11 +1,11 @@
 <template>
   <div id="app">
-    <img style="width:12.5rem"  src="./assets/logo.png">
     <router-view/>
   </div>
 </template>
 
 <script>
+    import '@/assets/style/public.css'
 export default {
   name: 'App'
 };

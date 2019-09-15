@@ -23,17 +23,26 @@
                 <div class="grid-content"><span class="sat">Sat.</span>土曜日</div>
             </el-col>
         </el-row>
+        <Footer v-bind:class="{'isIndex':isNowPage}"></Footer>
     </div>
 </template>
 
 <script>
+  import Footer from '@/components/footerview'
+  import HelloWorld from '@/components/HelloWorld'
+
   export default {
-    name: 'week',
-    data() {
-      return {
+    name: 'index',
+    components: {
+      Footer,
+      HelloWorld
+    },
+    data(){
+      return{
+        isNowPage:true,
         isFixed: false,
         offsetTop: 0
-      };
+      }
     },
     mounted() {
       // 设置bar浮动阈值为 #fixedBar 至页面顶部的距离
@@ -59,7 +68,7 @@
   }
 </script>
 
-<style>
+<style scoped>
     .week {
         margin-bottom: 1.25rem;
     }
