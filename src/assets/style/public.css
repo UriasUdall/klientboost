@@ -32,6 +32,25 @@ a {
 }
 
 
-.block{
-    display: block!important;
+.block {
+    display: block !important;
+}
+
+.hr {
+    margin: 40px auto 0;
+    padding-bottom: 40px;
+    border-top: 1px solid #ced5dd;
+}
+
+.hr-strong {
+    border-width: 2px;
+}
+
+.black-border {
+    border-color: black;
+}
+
+.hr-line2 {
+    max-width: 48px;
+    margin: 20px auto 45px;
 }

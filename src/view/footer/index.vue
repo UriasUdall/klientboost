@@ -7,6 +7,7 @@
                     <a href=""><img src="../../assets/images/index/klientboost-logo-blue.png"></a>
                 </el-col>
                 <el-col :xs="9" :sm="1" :md="1" :lg="1" :xl="1">&nbsp;</el-col>
+
                 <el-col class="our-link-list" :xs="12" :sm="3" :md="3" :lg="3" :xl="3">
                     <h3>AGENCY</h3>
                     <ul class="our-link-ul">
@@ -28,6 +29,7 @@
                     </ul>
                 </el-col>
                 <el-col :xs="9" class="hidden-sm-and-up">&nbsp;</el-col>
+
                 <el-col class="our-link-list" :xs="12" :sm="7" :md="5" :lg="6" :xl="6">
                     <h3>PAY-PER-CLICK</h3>
                     <ul class="our-link-ul">
@@ -49,6 +51,7 @@
                     </ul>
                 </el-col>
                 <el-col :xs="9" class="hidden-sm-and-up">&nbsp;</el-col>
+
                 <el-col class="our-link-list" :xs="12" :sm="7" :md="6" :lg="6" :xl="6">
                     <h3>CONVERSION</h3>
                     <ul class="our-link-ul">
@@ -70,6 +73,7 @@
                     </ul>
                 </el-col>
                 <el-col :xs="9" class="hidden-sm-and-up">&nbsp;</el-col>
+
                 <el-col class="our-link-list" :xs="12" :sm="6" :md="5" :lg="5" :xl="5">
                     <h3>DESIGN</h3>
                     <ul class="our-link-ul">
@@ -92,8 +96,8 @@
                 </el-col>
             </el-row>
             <el-row class="hr-line">
-                <el-col :xs="0" :sm="2" :md="3" :lg="4" :xl="4" class="block">&nbsp;</el-col>
-                <el-col :xs="24" :sm="20" :md="18" :lg="16" :xl="16" class="hr">&nbsp;</el-col>
+                <el-col :xs="0" :sm="2" :md="3" :lg="0" :xl="4" class="block">&nbsp;</el-col>
+                <el-col :xs="24" :sm="20" :md="18" :lg="24" :xl="16" class="hr">&nbsp;</el-col>
             </el-row>
             <el-row>
                 <el-col :xs="0" :sm="4" :md="4" :lg="4" :xl="7" class="block">&nbsp;</el-col>
