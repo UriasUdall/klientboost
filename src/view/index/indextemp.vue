@@ -127,8 +127,8 @@
                                         If you have a chance to work with them,take it.
                                         <strong>
                                             They're marketing unicorns.
-                                        </strong>
-                                    </p>"
+                                        </strong>"
+                                    </p>
                                 </div>
                                 <div class="image">
                                     <img src="../../assets/images/index/8856b64e-c2c9-4358-846b-351492d56f44-400x400.jpg"
