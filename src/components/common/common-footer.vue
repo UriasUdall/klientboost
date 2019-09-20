@@ -303,6 +303,7 @@
 
     .index-footer .contact-us .contact-us-item p {
         margin: 0 0 10px;
+        font-size: 13px;
     }
 
     .index-footer .contact-us .contact-us-item a {
@@ -378,6 +379,7 @@
         font-weight: 700;
         padding: 12px 16px;
         cursor: pointer;
+        font-size: 0.8rem;
     }
 
     .index-footer .question-content .question-button span:hover {

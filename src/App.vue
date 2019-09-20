@@ -5,8 +5,9 @@
 </template>
 
 <script>
-  import 'element-ui/lib/theme-chalk/display.css'
+  import '@/assets/style/media.css'
   import '@/assets/style/public.css'
+  import 'element-ui/lib/theme-chalk/display.css'
 
   export default {
     name: 'App'

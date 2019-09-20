@@ -8,10 +8,9 @@ body {
     margin: 0;
     color: #30383f;
     font-family: Lato, Helvetica Neue, Helvetica;
-    font-size: 13px;
     min-width: 300px;
     min-height: 100%;
-    background: #f1f3f4;
+    background: white;
 }
 
 ul li {
@@ -21,6 +20,8 @@ ul li {
 a {
     text-decoration: none;
     color: #000;
+    cursor: pointer;
+    outline: none
 }
 
 .fixed {
@@ -30,7 +31,6 @@ a {
 .tc {
     text-align: center;
 }
-
 
 .block {
     display: block !important;

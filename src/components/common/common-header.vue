@@ -62,25 +62,25 @@
                             </a>
                         </li>
                         <li>
-                            <a href="javascript:;">HOME</a>
+                            <a :class="{HeaderMenuItemSelect:this.ifSelect.MenuItem1classTrue}"  href="javascript:;">HOME</a>
                         </li>
                         <li>
-                            <a class="a_js2" href="javascript:;">WHAT WE DO</a>
+                            <a class="a_js2" :class="{'HeaderMenuItemSelect':this.ifSelect.MenuItem2classTrue}" href="javascript:;">WHAT WE DO</a>
                         </li>
                         <li>
-                            <a class="a_js2" href="javascript:;">TEAM</a>
+                            <a class="a_js2" :class="{'HeaderMenuItemSelect':this.ifSelect.MenuItem3classTrue}"  href="javascript:;">TEAM</a>
                         </li>
                         <li>
-                            <a class="a_js2" href="javascript:;">CASE STUDIE</a>
+                            <a class="a_js2" :class="{'HeaderMenuItemSelect':this.ifSelect.MenuItem4classTrue}"  href="javascript:;">CASE STUDIE</a>
                         </li>
                         <li>
-                            <a class="a_js2" href="javascript:;">SRESOURCES</a>
+                            <a class="a_js2" :class="{'HeaderMenuItemSelect':this.ifSelect.MenuItem5classTrue}"  href="javascript:;">SRESOURCES</a>
                         </li>
                         <li>
-                            <a class="a_js2" href="javascript:;">BLOG</a>
+                            <a class="a_js2" :class="{'HeaderMenuItemSelect':this.ifSelect.MenuItem6classTrue}"  href="javascript:;">BLOG</a>
                         </li>
                         <li>
-                            <a class="a_js2" href="javascript:;">CONTACT</a>
+                            <a class="a_js2" :class="{'HeaderMenuItemSelect':this.ifSelect.MenuItem7classTrue}"  href="javascript:;">CONTACT</a>
                         </li>
                         <div class="clear"></div>
                     </ul>
@@ -96,7 +96,33 @@
 
   export default {
     name: 'common-header',
+    props:{
+      ifSelect:{
+        MenuItem1classTrue:'',
+        MenuItem2classTrue:'',
+        MenuItem3classTrue:'',
+        MenuItem4classTrue:'',
+        MenuItem5classTrue:'',
+        MenuItem6classTrue:'',
+        MenuItem7classTrue:'',
+      }
+    },
+    data () {
+      return{
+          // ifSelect:{
+          //     MenuItem1classTrue:'false',
+              // MenuItem2classTrue:'false',
+              // MenuItem3classTrue:'false',
+              // MenuItem4classTrue:'false',
+              // MenuItem5classTrue:'false',
+              // MenuItem6classTrue:'false',
+              // MenuItem7classTrue:'false',
+          // }
+      }
+    },
     mounted () {
+      console.log(this.ifSelect.MenuItem1classTrue),
+      console.log(this.ifSelect.MenuItem2classTrue),
       $(function() {
         //PC端鼠标浮动展示子导航
         // $(".nav ul li").hover(
