@@ -21,7 +21,7 @@
       <el-col :xs="2" :sm="2" :md="2" :lg="2">&nbsp;</el-col>
       <!--图片内容-->
       <el-col :xs="20" :sm="20" :md="20" :lg="20">
-        <el-row gutter="20">
+        <el-row :gutter="20">
           <el-col :xs="8" :sm="4" :md="4" :lg="4">
             <img src="../../assets/images/index/logo-sap-144x48-2x.png" alt="SPA" class="logo-image">
           </el-col>
@@ -57,7 +57,7 @@
         <el-col :xs="5" :sm="1" :md="2" :lg="2">&nbsp;</el-col>
         <!--图片链接-->
         <el-col :xs="14" :sm="22" :md="20" :lg="20">
-          <el-row gutter="20">
+          <el-row :gutter="20">
             <el-col :xs="24" :sm="8" :md="8" :lg="8">
               <div class="lightbox-btn">
                 <a href="https://www.youtube.com/embed/FPfb6NFmg0w?autoplay=1&vq=hd1080" class="lightbox-a">
@@ -160,7 +160,7 @@
       </el-col>
       <!--右边图片-->
       <!--最大的问题，分栏分的不对-->
-      <el-col xs="0" :sm="5" :md="0" :lg="0">&nbsp;</el-col>
+      <el-col :xs="0" :sm="5" :md="0" :lg="0">&nbsp;</el-col>
       <el-col :xs="0" :sm="14" :md="18" :lg="12" class="middle-first-image-big hidden-xs-only">&nbsp;
         <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
       </el-col>

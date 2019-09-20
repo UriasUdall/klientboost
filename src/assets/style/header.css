@@ -1,5 +1,5 @@
 .rg {
-    float: right
+    float: right;
 }
 
 .clear {
@@ -14,42 +14,77 @@
     top: 0px;
     left: 0px;
     width: 100%;
-    min-width: 1000px;
+    /*min-width: 1000px;*/
     z-index: 9999;
-    background: rgba(255,255,255,0.93);
-    height: 100px;
+    /*background: rgba(255,255,255,0.93);*/
+    background: #F6F8FA;
+    height: 82px;
     transition: all .3s
 }
 
+.header-logo {
+    /*float: left;*/
+}
+
+.header-logo a {
+    line-height: 80px;
+}
+
+.header-logo img {
+    height: 42px;
+    line-height: 80px;
+    vertical-align: middle;
+}
 
 .nav {
-    width: 60%;
+    display: block;
+    /*width: 80;*/
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     transition: all .3s
 }
 
+.nav_pc {
+    float: right;
+    padding-right: 30px;
+}
+
 .nav ul li {
     float: left;
-    width: 14.28%;
-    height: 100px;
+    height: 82px;
+    line-height: 82px;
+    margin-left: 28px;
     transition: all .3s
 }
 
-.nav ul li .a1 {
-    line-height: 100px;
-    display: block;
+
+.nav ul .a1 {
     text-align: center;
-    font-size: 16px;
+    font-size: 1.15rem;
     color: #667482;
     font-weight: 600;
     transition: all .3s
 }
 
-.nav ul li:hover .a1 {
+.nav ul .a1:hover {
     color: #6adaf7;;
     transition: all .3s
 }
+
+.nav ul .head-button {
+    /*border-color: #ff5056;*/
+    color: #ff5056;
+    border: 3px solid #ff5056;
+    border-radius: 5px;
+    padding: 15px 30px;
+}
+
+.nav ul .head-button:hover {
+    background: #ff5056;
+    color: #fff !important;
+    border-color: #ff5056;
+}
+
 
 .nav ul li .div1 {
     display: none;
@@ -80,131 +115,152 @@
     transition: all .5s
 }
 
+.head-button {
+
+}
+
+
 .a_txt {
     display: none
 }
 
 /*小于1600大于1200稍微调整下字体*/
 /*@media screen and (max-width: 1600px) and (min-width: 768px) {*/
-    .nav ul li .a1 {
-        font-size: 14px
-    }
+/*    .nav ul li .a1 {*/
+/*        font-size: 14px*/
+/*    }*/
 
-    .nav ul li .div1 .p1 a {
-        font-size: 12px
-    }
+.nav ul li .div1 .p1 a {
+    font-size: 12px
+}
 
-    .foot_top ul {
-        margin-left: 60px
-    }
+.foot_top ul {
+    margin-left: 60px
+}
 
-    .nav ul li .div1 .p1 {
-        width: 58%
-    }
+.nav ul li .div1 .p1 {
+    width: 58%
+}
+
 /*}*/
 
 /*移动端导航*/
 /*@media screen and (max-width: 768px) and (min-width: 0px) {*/
 
 
-    .moblie_head {
-        height: 82px;
-        background: #fff;
-        position: fixed;
-        top: 0px;
-        left: 0px;
-        width: 100%;
-        z-index: 9999;
-        /*border-bottom: 1px solid #ddd*/
-    }
+.moblie_head {
+    height: 82px;
+    background: #fff;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 9999;
+    /*border-bottom: 1px solid #ddd*/
+}
 
-    .moblie_head .rg {
-        padding-right: 5%;
-        padding-top: 14px
-    }
+.moblie_head .rg {
+    padding-right: 5%;
+    padding-top: 14px
+}
 
-    .moblie_head .rg a img {
-        vertical-align: middle;
-        padding-top: 16px;
-        height:22px;
-    }
+.moblie_head .rg a img {
+    vertical-align: middle;
+    padding-top: 16px;
+    height: 22px;
+}
 
-    .a_txt {
-        display: block;
-        position: fixed;
-        top: 0px;
-        left: 0px;
-        width: 0px;
-        height: 0px;
-        overflow: hidden;
-        z-index: 10000
-    }
+.a_txt {
+    display: block;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+    z-index: 10000
+}
 
-    .a_txt .div1 {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background: #0b0d19;
-        filter: alpha(opacity=0);
-        opacity: 0;
-        left: 0px;
-        top: 0px;
-        z-index: 1
-    }
+.a_txt .div1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #0b0d19;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    left: 0px;
+    top: 0px;
+    z-index: 1
+}
 
-    .a_txt .div3 {
-        position: absolute;
-        width: 280px;
-        right: 0px;
-        top: 0px;
-        background: #FFFFFF;
-        height: 100%;
-        z-index: 100;
-        right: -80%
-    }
+.a_txt .div3 {
+    position: absolute;
+    width: 280px;
+    right: 0px;
+    top: 0px;
+    background: #FFFFFF;
+    height: 100%;
+    z-index: 100;
+    right: -80%
+}
 
-    .a_txt .div3 ul {
-        text-align: left;
-    }
+.a_txt .div3 ul {
+    text-align: left;
+}
 
-    .a_txt .div3 ul li {
-    }
+.a_txt .div3 ul li {
+}
 
-    .a_txt .div3 ul li a {
-        display: block;
-        height: 16px;
-        color: #667482;
-        line-height: 16px;
-        font-size: 16px;
-        border-bottom: 2px solid transparent;
-        border-top: 2px solid transparent;
-        padding: 12px 35px;
-    }
+.a_txt .div3 ul li a {
+    height: 16px;
+    line-height: 16px;
+    display: block;
+    color: #667482;
+    font-size: 16px;
+    border-bottom: 2px solid transparent;
+    border-top: 2px solid transparent;
+    padding: 12px 35px;
+}
 
-    .a_txt .div3 ul li:first-child a{
-        margin-bottom: 20px;
-    }
+.a_txt .div3 ul li:first-child a {
+    margin-bottom: 20px;
+}
 
-    .a_txt .div3 ul li a:focus {
-        color: #6adaf7;
-        border-color: #6adaf7;
-        background: rgba(106,218,247,.05);
-    }
+.moblie_head-button {
+    /*padding: 0 !important;*/
+    padding: 12px 0px!important;
+    max-width: 175px!important;
+    border: 3px solid #ff5056 !important;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 600;
+    margin-left: 20px;
+    margin-top: 15px;
+    /*line-height: 47px !important;*/
+    color: #ff5056 !important;
+}
 
-    .a_txt .div3 ul li:first-child a:focus {
-        border-color:white;
-        background: white;
-    }
+/*.a_txt .div3 ul li a:focus {*/
+/*    color: #6adaf7;*/
+/*    border-color: #6adaf7;*/
+/*    background: rgba(106,218,247,.05);*/
+/*}*/
 
-    .a_txt .div3 ul li:nth-child(1) img{
-        float: right;
-        width: 30px;
-        height: auto;
-    }
+.a_txt .div3 ul li:first-child a:focus {
+    border-color: white;
+    background: white;
+}
 
-    .HeaderMenuItemSelect{
-        color: #6adaf7;
-        border-color: #6adaf7;
-        background: rgba(106,218,247,.05);
-    }
+.a_txt .div3 ul li:nth-child(1) img {
+    float: right;
+    width: 30px;
+    height: auto;
+}
+
+.HeaderMenuItemSelect {
+    color: #6adaf7;
+    border-color: #6adaf7 !important;
+    background: rgba(106, 218, 247, .05);
+}
+
 /*}*/

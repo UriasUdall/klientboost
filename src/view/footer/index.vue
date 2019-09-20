@@ -3,9 +3,6 @@
         <CommonHeader :ifSelect="ifSelect"></CommonHeader>
         <br/>
         <br/>
-        <br/>
-        <br/>
-        <br/>
         <CommonFooter></CommonFooter>
     </el-row>
 </template>
