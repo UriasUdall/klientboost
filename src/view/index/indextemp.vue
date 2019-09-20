@@ -208,9 +208,9 @@
 </script>
 
 <style scoped>
-    .text-center {
-        text-align: center;
-    }
+    /*.text-center {*/
+    /*    text-align: center;*/
+    /*}*/
 
     hr {
         margin-top: 20px;
@@ -689,7 +689,7 @@
     }
     .presentationTextLeft{
         font-size: 1.1em;
-        float: left;
+        /*float: left;*/
         position: relative;
         z-index: 5;
         vertical-align: middle;

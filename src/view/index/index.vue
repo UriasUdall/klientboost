@@ -124,8 +124,6 @@
           </strong>"
         </p>
 
-
-
       </el-col>
     </el-row>
     <!--作者图片-->
@@ -143,18 +141,32 @@
         <span class="title">Co-Founder @
           <a href="http://unbounce.com" class="company" target="_blank">Unbounce</a>
         </span>
-        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
       </el-col>
     </el-row>
-<!--    <div class="image">-->
-<!--      <img src="../../assets/images/index/8856b64e-c2c9-4358-846b-351492d56f44-400x400.jpg"-->
-<!--           alt="Oli Gardner">-->
-<!--    </div>-->
-<!--    <div class="name">Oli Gardner</div>-->
-<!--    <div class="title">-->
-<!--      Co-Founder @-->
-<!--      <a href="http://unbounce.com" class="company" target="_blank">Unbounce</a>-->
-<!--    </div>-->
+    <!--图文结合三大组件-->
+    <el-row>
+      <!--空格占位-->
+      <el-col :xs="0" :sm="1" :md="2" :lg="2" class="block">&nbsp;</el-col>
+      <!--左边字体-->
+      <el-col :xs="24" :sm="4" :md="4" :lg="10">
+        <div class="middle-first text-center text-left">
+          <h2>You'll Make More Money</h2>
+          <div class="ContentBorder"></div>
+          <h3>From Facebook & Google Ads to custom landing pages,
+            we help you discover the highest return
+            <br>
+            on investment you've ever had.</h3>
+        </div>
+      </el-col>
+      <!--右边图片-->
+      <!--最大的问题，分栏分的不对-->
+      <el-col xs="0" :sm="5" :md="0" :lg="0">&nbsp;</el-col>
+      <el-col :xs="0" :sm="14" :md="18" :lg="12" class="middle-first-image-big hidden-xs-only">&nbsp;
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+      </el-col>
+      <el-col :xs="24" :sm="0" :md="0" :lg="0" class="middle-first-image-small hidden-sm-and-up">&nbsp;
+      </el-col>
+    </el-row>
     <Footer v-bind:class="{'isIndex':isNowPage}"></Footer>
   </el-row>
 </template>
@@ -178,6 +190,9 @@
 </script>
 
 <style scoped>
+  .index{
+    font-family:Lato,Helvetica Neue,Helvetica;
+  }
   /*首部火箭背景*/
   #hero {
     background-color: #11253c;
@@ -234,8 +249,7 @@
   }
 
   .content a {
-    margin-top: 38px;
-    margin-bottom: 225px;
+    margin: 38px auto 225px;
     width: 300px;
     height: 60px;
     font-size: 1.5rem;
@@ -369,7 +383,7 @@
   }
   /*引文*/
   .quote{
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 500;
     line-height: 130%;
     margin: 20px 0 10px;
@@ -387,15 +401,55 @@
     width: 100%;
   }
   .name {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 700;
     margin: 0 0 2px;
   }
   .title {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
+    font-weight: 400;
     color: #667482;
     display: block;
     margin-top:10px;
   }
 
+  /*图文结合三大组件*/
+  /*col*/
+  .middle-first{
+    width: 400px;
+    margin: 100px auto 0;
+  }
+  .middle-first h2{
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #30383F;
+  }
+  .ContentBorder{
+    height: 2px;
+    width: 150px;
+    background:#6adaf7;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  .middle-first h3{
+    color: #667482;
+    font-size: 1.4rem;
+  }
+  .middle-first-image-big{
+    width: 28rem;
+    height: 23rem;
+    float: right;
+    background: url("../../assets/images/index/home-planet-klientboost.png") no-repeat;
+    background-size: 100% 100%;
+  }
+  .middle-first-image-small{
+    width: 22rem;
+    height: 16rem;
+    float: none;
+    clear: both;
+    background: url("../../assets/images/index/18107a0f3ea1ea18ba61b895da61b198.jpg") no-repeat;
+    background-size: 100% 100%;
+    margin: 20px auto;
+  }
 </style>
