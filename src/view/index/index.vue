@@ -147,43 +147,40 @@
     <!--第1个-->
     <el-row>
       <!--空格占位-->
-      <el-col :xs="0" :sm="0" :md="2" :lg="0" class="block">&nbsp;</el-col>
+      <el-col :xs="0" :sm="0" :md="1" :lg="1" class="block">&nbsp;</el-col>
       <!--左边字体-->
-      <el-col :xs="24" :sm="24" :md="10" :lg="11">
+      <el-col :xs="24" :sm="24" :md="11" :lg="10">
         <div class="middle-font text-center text-left">
           <h2>You'll Make More Money</h2>
           <div class="ContentBorder"></div>
           <h3>From Facebook & Google Ads to custom landing pages,
             we help you discover the highest return
-            <br>
             on investment you've ever had.</h3>
         </div>
       </el-col>
       <!--右边图片-->
-      <el-col :md="12" :lg="13" class="middle-image-big middle-first-image-big hidden-sm-and-down">&nbsp;</el-col>
-      <el-col :xs="24" :sm="24" class="middle-image-small middle-first-image-small hidden-md-and-up">&nbsp;</el-col>
+      <el-col :md="12" :lg="13" class="middle-first-image-big hidden-sm-and-down">&nbsp;</el-col>
+      <el-col :xs="24" :sm="24" class="middle-first-image-small hidden-md-and-up">&nbsp;</el-col>
     </el-row>
     <!--第2个-->
-    <el-row>
+    <el-row class="mt-50">
+      <!--左边图片-->
+      <el-col :md="12" :lg="13" class="middle-second-image-big hidden-sm-and-down">&nbsp;</el-col>
+      <el-col :xs="24" :sm="24" class="middle-second-image-small hidden-md-and-up">&nbsp;</el-col>
       <!--空格占位-->
-      <el-col :xs="0" :sm="0" :md="2" :lg="0" class="block">&nbsp;</el-col>
+<!--      <el-col :xs="0" :sm="0" :md="2" :lg="0" class="block">&nbsp;</el-col>-->
       <!--左边字体-->
-      <el-col :xs="24" :sm="24" :md="10" :lg="11">
+      <el-col :xs="24" :sm="24" :md="12" :lg="11">
         <div class="middle-font text-center text-left">
           <h2>You'll Work With Talent</h2>
           <div class="ContentBorder"></div>
           <h3>
             From deep PPC knowledge to conversion focused
-            <br/>
             design,we bring the best of both worlds to grow your
-            <br/>
             profitability.
           </h3>
         </div>
       </el-col>
-      <!--右边图片-->
-      <el-col :md="12" :lg="13" class="middle-image-big middle-second-image-big hidden-sm-and-down">&nbsp;</el-col>
-      <el-col :xs="24" :sm="24" class="middle-image-small middle-second-image-small hidden-md-and-up">&nbsp;</el-col>
     </el-row>
     <!--第3个-->
     <el-row>
@@ -192,19 +189,20 @@
       <!--左边字体-->
       <el-col :xs="24" :sm="24" :md="10" :lg="11">
         <div class="middle-font text-center text-left">
-          <h2>You'll Make More Money</h2>
+          <h2>You'll Grow Very Fast</h2>
           <div class="ContentBorder"></div>
-          <h3>From Facebook & Google Ads to custom landing pages,
-            we help you discover the highest return
-            <br>
-            on investment you've ever had.</h3>
+          <h3>
+            From quick wins to long term strategies,we create a
+            profit rich environment to help you scale to new heights
+            while maintaining costs.
+          </h3>
         </div>
       </el-col>
       <!--右边图片-->
-      <el-col :md="12" :lg="13" class="middle-image-big middle-first-image-big hidden-sm-and-down">&nbsp;
+      <el-col :md="12" :lg="13" class="middle-third-image-big hidden-sm-and-down">&nbsp;
         <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
       </el-col>
-      <el-col :xs="24" :sm="24" class="middle-image-small middle-first-image-small hidden-md-and-up">&nbsp;
+      <el-col :xs="24" :sm="24" class="middle-third-image-small hidden-md-and-up">&nbsp;
       </el-col>
     </el-row>
     <Footer v-bind:class="{'isIndex':isNowPage}"></Footer>
@@ -456,7 +454,7 @@
   /*图文结合三大组件*/
   /*col*/
   .middle-font{
-    width: 400px;
+    width: 450px;
     margin: 100px auto 0;
   }
   .middle-font h2{
@@ -478,29 +476,55 @@
     font-size: 1.6rem;
     margin-bottom: 50px;
   }
-  .middle-image-big{
+  .middle-first-image-big{
     height: 43rem;
     float: right;
+    background: url("../../assets/images/index/home-planet-klientboost.png") no-repeat;
     background-size: 100%  100%;
   }
-  .middle-image-small{
+  .middle-first-image-small{
     width: 360px;
     height: 200px;
     float: none;
     clear: both;
+    background: url("../../assets/images/index/18107a0f3ea1ea18ba61b895da61b198.jpg") no-repeat;
     background-size: 100% 100%;
     margin: 20px auto;
   }
-  .middle-first-image-big{
-    background: url("../../assets/images/index/home-planet-klientboost.png") no-repeat;
-  }
-  .middle-first-image-small{
-    background: url("../../assets/images/index/18107a0f3ea1ea18ba61b895da61b198.jpg") no-repeat;
-  }
   .middle-second-image-big{
-    background: url("../../assets/images/index/home-planet-klientboost.png") no-repeat;
+    height: 25rem;
+    width: 48rem;
+    float: left;
+    background: url("../../assets/images/index/home-astronauts.png") no-repeat;
+    background-size: 100%  100%;
+    background-position-x: -170px;
+  }
+  .mt-50{
+    margin-top: -50px;
   }
   .middle-second-image-small{
-    background: url("../../assets/images/index/18107a0f3ea1ea18ba61b895da61b198.jpg") no-repeat;
+    width: 360px;
+    height: 200px;
+    float: none;
+    clear: both;
+    background: url("../../assets/images/index/home-astronauts.png") no-repeat;
+    background-size: 100% 100%;
+    margin: 20px auto;
+  }
+  .middle-third-image-big{
+    height: 30rem;
+    float: right;
+    background: url("../../assets/images/index/illustration-plants.jpg") no-repeat;
+    background-position-x: -170px;
+    background-size: 100%  100%;
+  }
+  .middle-third-image-small{
+    width: 360px;
+    height: 200px;
+    float: none;
+    clear: both;
+    background: url("../../assets/images/index/785e6348d8866b16cafc8c1ff65460b1.jpg") no-repeat;
+    background-size: 100% 100%;
+    margin: 20px auto;
   }
 </style>
