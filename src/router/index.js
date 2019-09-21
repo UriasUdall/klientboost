@@ -15,6 +15,11 @@ export default new Router({
       component: index
     },
     {
+      path: '/test',
+      name: 'test',
+      component: test
+    },
+    {
       path: '/footer',
       name: 'footer',
       component: footer

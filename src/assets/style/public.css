@@ -85,7 +85,7 @@ a {
 
 
 .btn-BRCW:hover{
-    background-color: #ff3c42;
+    background-color: #FF3C42;
     border-color: #e90008;
 }
 
@@ -95,7 +95,7 @@ a {
     color: white;
     border-radius: 5px;
     line-height: 100%;
-    border-bottom: 2px solid #ff5056;
+    border-bottom: 2px solid #ff272f;
     outline: 0!important;
 }
 
@@ -103,4 +103,6 @@ a {
 .btn-BRCW-BB:hover{
     background-color: #ff3c42;
     border-color: #e90008;
+    cursor: pointer;
+    color: #fff;
 }
