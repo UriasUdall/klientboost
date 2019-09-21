@@ -2,6 +2,11 @@
     <el-row>
         <el-col>
             <CommonHeader :ifSelect="ifSelect"></CommonHeader>
+        </el-col>
+        <el-col>
+
+        </el-col>
+        <el-col>
             <CommonFooter></CommonFooter>
         </el-col>
     </el-row>
@@ -11,7 +16,7 @@
   import CommonHeader from '@/components/common/common-header'
   import CommonFooter from '@/components/common/common-footer'
   export default {
-    name: 'contact',
+    name: 'index',
     components: {
       CommonHeader,
       CommonFooter

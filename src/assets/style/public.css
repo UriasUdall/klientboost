@@ -54,3 +54,53 @@ a {
     max-width: 48px;
     margin: 20px auto 45px;
 }
+
+/* 按钮公共样式 */
+.btn-BWCR{
+    display: inline-block;
+    background: white;
+    color: #ff5056;
+    border-radius: 5px;
+    line-height: 100%;
+    border: 2px solid #ff5056;
+    outline: 0!important;
+}
+
+
+.btn-BWCR:hover{
+    background: #ff5056;
+    color: #fff;
+    border-color: #ff5056;
+}
+
+.btn-BRCW{
+    display: inline-block;
+    background: #ff5056;
+    color: white;
+    border-radius: 5px;
+    line-height: 100%;
+    border: 2px solid #ff5056;
+    outline: 0!important;
+}
+
+
+.btn-BRCW:hover{
+    background-color: #ff3c42;
+    border-color: #e90008;
+}
+
+.btn-BRCW-BB{
+    display: inline-block;
+    background: #ff5056;
+    color: white;
+    border-radius: 5px;
+    line-height: 100%;
+    border-bottom: 2px solid #ff5056;
+    outline: 0!important;
+}
+
+
+.btn-BRCW-BB:hover{
+    background-color: #ff3c42;
+    border-color: #e90008;
+}
