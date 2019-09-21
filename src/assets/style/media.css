@@ -1,11 +1,51 @@
 /* 媒体查询文件 */
-@media screen and (max-width: 768px) {
-    /*.head {*/
-    /*    display: none;*/
-    /*}*/
-    /*.moblie_head{*/
-    /*    display: block;*/
-    /*}*/
+@media screen and (max-width: 600px) {
+    .moblie_head .rg a img{
+        padding-top: 15px!important;
+        height: 22px!important;
+    }
+
+    .common-header .logo-img{
+        padding-left: 0px!important;
+        margin: auto;
+        width: 40px!important;
+        height: 28px!important;
+        line-height: 82px!important;
+        display:table-cell;
+        vertical-align: middle;
+        background: url("../../assets/images/index/klientboost-logo-mobile-blue.png") right no-repeat!important;
+        background-size: 40px 28px!important;
+    }
+
+    .text-center {
+        text-align: center !important;
+    }
+
+    .nav ul .a1 {
+        font-size: 1rem !important;
+    }
+
+    .head {
+        display: none;
+    }
+
+    .moblie_head {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    .moblie_head .rg a img{
+        padding-top: 15px!important;
+        height: 22px!important;
+    }
+    .common-header .logo-img{
+        padding-left: 10px!important;
+        width: 95px!important;
+        height: 28px!important;
+        background: url("../../assets/images/index/klientboost-logo-blue.png") right no-repeat!important;
+        background-size: 95px 28px!important;
+    }
     .text-center {
         text-align: center !important;
     }

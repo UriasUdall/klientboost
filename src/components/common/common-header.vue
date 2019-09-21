@@ -1,13 +1,13 @@
 <template>
-    <el-row style="height: 82px">
+    <el-row class="common-header" style="height: 82px">
 <!--        <el-col class="block hidden-xs-only" :sm="0" :md="1" :lg="2" :xl="3">&nbsp;</el-col>-->
         <el-col class="head hidden-xs-only" id="head" >
-            <el-row>
+            <el-row >
                 <el-col class="block hidden-xs-only" :sm="0" :md="0" :lg="1" :xl="3">&nbsp;</el-col>
-                <el-col  class="header-logo hidden-xs-only" :sm="4" :md="4" :lg="4" :xl="4">
+                <el-col class="header-logo hidden-xs-only" :sm="4" :md="4" :lg="4" :xl="4">
                     <a href="javascript:;">
-                        <img src="../../assets/images/index/klientboost-logo-blue.png">
-                        <div class="p1"></div>
+                        <div class="logo-img"></div>
+<!--                        <div class="p1"></div>-->
                     </a>
                 </el-col>
 <!--                <el-col class="block hidden-xs-only" :sm="0" :md="4" :lg="4" :xl="3">&nbsp;</el-col>-->
@@ -41,13 +41,32 @@
 
         <!--移动端导航开始-->
         <el-col class="moblie_head hidden-md-and-up" >
-            <div class="rg">
-                <a href="javascript:;" class="a_js">
-                    <img src="https://3jbq2ynuxa-flywheel.netdna-ssl.com/wp-content/themes/klientboost/img/menu-bars-dark.svg"></a>
-            </div>
-            <div class="clear"></div>
+            <el-row>
+                <el-col class="block hidden-md-and-up":xs="0" :sm="0">&nbsp;</el-col>
+                <el-col class="header-logo hidden-md-and-up" :xs="5" :sm="5" >
+                    <a href="javascript:;">
+                        <div class="logo-img"></div>
+                        <!--                        <div class="p1"></div>-->
+                    </a>
+                </el-col>
 
+                <el-col class="hidden-sm-and-up" style="height: 82px" :xs="14" >
+                    <div>
+                        <a class="mobile-nav-button" href="">GET PROPOSAL</a>
+                    </div>
+                </el-col>
+
+                <el-col :xs="5" :sm="19" class="hidden-md-and-up">
+                    <div class="rg">
+                        <a href="javascript:;" class="a_js">
+                            <img src="https://3jbq2ynuxa-flywheel.netdna-ssl.com/wp-content/themes/klientboost/img/menu-bars-dark.svg" ></a>
+                    </div>
+                    <div class="clear"></div>
+                </el-col>
+            </el-row>
         </el-col>
+
+
 
         <el-col class="a_txt hidden-md-and-up" >
 
