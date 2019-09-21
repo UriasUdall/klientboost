@@ -11,7 +11,6 @@
 
   import CommonFooter from '@/components/common/common-footer'
   import CommonHeader from '@/components/common/common-header'
-  import 'element-ui/lib/theme-chalk/display.css'
 
   export default {
     name: 'index',

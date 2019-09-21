@@ -24,7 +24,7 @@
                             <a href="">Careers</a>
                         </li>
                         <li>
-                            <a href="">Contact Us</a>
+                            <a href="/contact">Contact Us</a>
                         </li>
                     </ul>
                 </el-col>
@@ -190,7 +190,6 @@
             <br/>
             <br/>
         </el-col>
-        <Footer v-bind:class="{'isIndex':isNowPage}"></Footer>
     </el-row>
 </template>
 

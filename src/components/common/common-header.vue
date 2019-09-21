@@ -1,7 +1,7 @@
 <template>
     <el-row class="common-header" style="height: 82px">
 <!--        <el-col class="block hidden-xs-only" :sm="0" :md="1" :lg="2" :xl="3">&nbsp;</el-col>-->
-        <el-col class="head hidden-xs-only" id="head" >
+        <el-col class="head hidden-xs-only"  id="head" >
             <el-row >
                 <el-col class="block hidden-xs-only" :sm="0" :md="0" :lg="1" :xl="3">&nbsp;</el-col>
                 <el-col class="header-logo hidden-xs-only" :sm="4" :md="4" :lg="4" :xl="4">
@@ -106,7 +106,7 @@
                     </li>
                     <li>
                         <a class="a_js2" :class="{'HeaderMenuItemSelect':this.ifSelect.MenuItem7classTrue==='true'}"
-                           href="javascript:;">CONTACT</a>
+                           href="/contact">CONTACT</a>
                     </li>
                     <li>
                         <a class="a1 moblie_head-button" href="javascript:;">GET PROPOSAL</a>
@@ -135,9 +135,9 @@
         MenuItem7classTrue: '',
       }
     },
+    methods:{
+    },
     mounted () {
-      console.log(this.ifSelect.MenuItem1classTrue),
-        console.log(this.ifSelect.MenuItem2classTrue),
         $(function () {
           //PC端鼠标浮动展示子导航
           // $(".nav ul li").hover(
