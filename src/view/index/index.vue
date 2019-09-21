@@ -1,5 +1,6 @@
 <template>
   <el-row class="index">
+    <CommonHeader :ifSelect="ifSelect"></CommonHeader>
     <!--首部火箭背景-->
     <div id="hero">
       <div class="star"></div>
@@ -163,14 +164,11 @@
       <el-col :xs="24" :sm="24" class="middle-first-image-small hidden-md-and-up">&nbsp;</el-col>
     </el-row>
     <!--第2个-->
-    <el-row class="mt-50">
+    <el-row>
       <!--左边图片-->
-      <el-col :md="12" :lg="13" class="middle-second-image-big hidden-sm-and-down">&nbsp;</el-col>
+      <el-col :md="10" :lg="10" class="middle-second-image-big hidden-sm-and-down">&nbsp;</el-col>
       <el-col :xs="24" :sm="24" class="middle-second-image-small hidden-md-and-up">&nbsp;</el-col>
-      <!--空格占位-->
-<!--      <el-col :xs="0" :sm="0" :md="2" :lg="0" class="block">&nbsp;</el-col>-->
-      <!--左边字体-->
-      <el-col :xs="24" :sm="24" :md="12" :lg="11">
+      <el-col :xs="24" :sm="24" :md="12" :lg="12">
         <div class="middle-font text-center text-left">
           <h2>You'll Work With Talent</h2>
           <div class="ContentBorder"></div>
@@ -187,7 +185,7 @@
       <!--空格占位-->
       <el-col :xs="0" :sm="0" :md="2" :lg="0" class="block">&nbsp;</el-col>
       <!--左边字体-->
-      <el-col :xs="24" :sm="24" :md="10" :lg="11">
+      <el-col :xs="24" :sm="24" :md="10" :lg="11" class="mt-80">
         <div class="middle-font text-center text-left">
           <h2>You'll Grow Very Fast</h2>
           <div class="ContentBorder"></div>
@@ -205,23 +203,77 @@
       <el-col :xs="24" :sm="24" class="middle-third-image-small hidden-md-and-up">&nbsp;
       </el-col>
     </el-row>
-    <Footer v-bind:class="{'isIndex':isNowPage}"></Footer>
+    <!--第2个逗号分隔符-->
+    <el-row>
+      <el-col>
+        <div class="border"></div>
+        <div class="icon">
+          <div class="icon-inner">
+            <img src="../../assets/images/index/quote.png" alt="">
+          </div>
+        </div>
+      </el-col>
+    </el-row>
+    <!--第2个引文-->
+    <el-row>
+      <el-col :xs="3" :sm="3" :md="3" :lg="3">&nbsp;</el-col>
+      <el-col :xs="18" :sm="18" :md="18" :lg="18">
+        <p class="quote">
+          "I thought I knew everything I could about AdWords,
+          but after spending just 5 minutes with these guys,I
+          realized how much more I had to learn.KlientBoost does
+          <strong>more than just produce results,</strong>
+          they teach you along the way."
+        </p>
+      </el-col>
+    </el-row>
+    <!--第2个作者图片-->
+    <el-row>
+      <el-col>
+        <div class="author">
+          <img src="../../assets/images/index/9aefb1e0f33bc33eeadff6ab053395c8.jpeg"
+               alt="Thue Madsen">
+        </div>
+      </el-col>
+    </el-row>
+    <el-row>
+      <el-col>
+        <h3 class="name">Thue Madsen</h3>
+        <span class="title">Marketing Ops. Manager @
+          <a href="http://teitter.com/ThueLMadsen" class="company" target="_blank">Kissmetrics</a>
+        </span>
+      </el-col>
+    </el-row>
+
+    <!--底部样式-->
+    <div></div>
+    <CommonFooter></CommonFooter>
   </el-row>
 </template>
 
 
 <script>
-    import Footer from '@/components/footerview'
+    import CommonFooter from '@/components/common/common-footer'
+    import CommonHeader from '@/components/common/common-header'
 
     export default {
         name: 'index',
         components: {
-            // FooterNav,
-            Footer
+            CommonFooter,
+            CommonHeader
         },
         data() {
             return {
-                isNowPage: true
+                isNowPage: true,
+                ifSelect:{
+                    MenuItem1classTrue:'true',
+                    MenuItem2classTrue:'false',
+                    MenuItem3classTrue:'false',
+                    MenuItem4classTrue:'false',
+                    MenuItem5classTrue:'false',
+                    MenuItem6classTrue:'false',
+                    MenuItem7classTrue:'false',
+                }
             }
         }
     }
@@ -230,6 +282,9 @@
 <style scoped>
   .index{
     font-family:Lato,Helvetica Neue,Helvetica;
+  }
+  .mt-80{
+    margin-top: 80px;
   }
   /*首部火箭背景*/
   #hero {
@@ -277,21 +332,21 @@
   .content .rocket {
     padding-top: 145px;
     margin: 0 auto 35px;
-    width: 6rem;
+    width: 10rem;
   }
   .content h1{
-    font-size: 2rem;
+    font-size: 4.4rem;
   }
   .content .rocket img {
     width: 100%;
   }
 
   .content a {
-    margin: 38px auto 225px;
-    width: 300px;
-    height: 60px;
-    font-size: 1.5rem;
-    line-height: 60px;
+    margin: 58px auto 225px;
+    width: 350px;
+    height: 80px;
+    font-size: 1.8rem;
+    line-height: 80px;
     border-width: 3px;
     padding: 0;
     color: #fff;
@@ -327,7 +382,7 @@
 
   /*三张图片链接*/
   .h2-1 {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     font-weight: 700;
     text-align: center;
     margin: 0;
@@ -369,20 +424,20 @@
     margin: 7px 0 20px;
   }
   .view-btn{
-    line-height: 54px;
+    line-height: 64px;
     display: block;
     color: #ff5056;
     background: #fff;
     border: 3px solid #ff5056;
-    width: 320px;
-    height: 55px;
+    width: 370px;
+    height: 64px;
     padding: 0;
     text-decoration: none;
     border-radius: 8px;
     font-weight: 700;
     margin: 40px auto 80px;
     cursor: pointer;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
   }
   .view-father a:hover{
     background: #ff5056;
@@ -391,7 +446,7 @@
 
   /*逗号分隔符*/
   .border {
-    height: 2px;
+    height: 3px;
     background: #11253c;
     width: 250px;
     margin: 20px auto 0;
@@ -421,7 +476,7 @@
   }
   /*引文*/
   .quote{
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: 500;
     line-height: 130%;
     margin: 20px 0 10px;
@@ -439,26 +494,31 @@
     width: 100%;
   }
   .name {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: 700;
     margin: 0 0 2px;
   }
   .title {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 400;
     color: #667482;
     display: block;
     margin-top:10px;
+  }
+  .company {
+    color: #30383f;
+    cursor: pointer;
+    font-size: 1.5rem;
   }
 
   /*图文结合三大组件*/
   /*col*/
   .middle-font{
     width: 450px;
-    margin: 100px auto 0;
+    margin: 50px auto 0;
   }
   .middle-font h2{
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 18px;
     color: #30383F;
@@ -473,7 +533,7 @@
   }
   .middle-font h3{
     color: #667482;
-    font-size: 1.6rem;
+    font-size: 2rem;
     margin-bottom: 50px;
   }
   .middle-first-image-big{
@@ -492,15 +552,12 @@
     margin: 20px auto;
   }
   .middle-second-image-big{
-    height: 25rem;
-    width: 48rem;
+    height: 20rem;
+    width: 40rem;
     float: left;
     background: url("../../assets/images/index/home-astronauts.png") no-repeat;
     background-size: 100%  100%;
-    background-position-x: -170px;
-  }
-  .mt-50{
-    margin-top: -50px;
+    background-position-x: -180px;
   }
   .middle-second-image-small{
     width: 360px;
@@ -512,10 +569,9 @@
     margin: 20px auto;
   }
   .middle-third-image-big{
-    height: 30rem;
+    height: 43rem;
     float: right;
     background: url("../../assets/images/index/illustration-plants.jpg") no-repeat;
-    background-position-x: -170px;
     background-size: 100%  100%;
   }
   .middle-third-image-small{
