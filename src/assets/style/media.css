@@ -24,9 +24,9 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 900px) {
-    .text-left {
-        text-align: left !important;
-    }
+  .text-center {
+    text-align: center !important;
+  }
 
     .head {
         display: none;
@@ -49,9 +49,9 @@
     /*.moblie_head{*/
     /*    display: none;*/
     /*}*/
-    .text-left {
-        text-align: left !important;
-    }
+  .text-center {
+    text-align: center !important;
+  }
 
     .nav ul .a1 {
         font-size: 1rem !important;
