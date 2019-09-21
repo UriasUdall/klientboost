@@ -1,13 +1,15 @@
 <template>
     <el-row class="common-header" style="height: 82px">
+        <!--PC端导航开始-->
 <!--        <el-col class="block hidden-xs-only" :sm="0" :md="1" :lg="2" :xl="3">&nbsp;</el-col>-->
-        <el-col class="head hidden-xs-only"  id="head" >
+        <el-col class="head hidden-xs-only"  id="head">
             <el-row >
                 <el-col class="block hidden-xs-only" :sm="0" :md="0" :lg="1" :xl="3">&nbsp;</el-col>
                 <el-col class="header-logo hidden-xs-only" :sm="4" :md="4" :lg="4" :xl="4">
-                    <a href="javascript:;">
+                    <a href="javascript:;"><!--不进行跳转-->
                         <div class="logo-img"></div>
 <!--                        <div class="p1"></div>-->
+
                     </a>
                 </el-col>
 <!--                <el-col class="block hidden-xs-only" :sm="0" :md="4" :lg="4" :xl="3">&nbsp;</el-col>-->
@@ -37,6 +39,9 @@
                 </el-col>
             </el-row>
         </el-col>
+         <!--PC端导航无背景开始-->
+         <!--PC端导航无背景开始-->
+
         <!--PC端导航结束-->
 
         <!--移动端导航开始-->

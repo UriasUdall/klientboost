@@ -1,15 +1,15 @@
-.rg {
+.common-header .moblie_head .rg {
     float: right;
 }
 
-.clear {
+.common-header .clear {
     clear: both;
     height: 0px;
     line-height: 0px;
     font-size: 0px
 }
 
-.head {
+.common-header .head {
     position: fixed;
     top: 0px;
     left: 0px;
@@ -22,7 +22,7 @@
     transition: all .3s
 }
 
-.header-logo {
+.common-header .head .header-logo {
     /*float: left;*/
 }
 
@@ -44,7 +44,7 @@
     background-size: 143px 42px;
 }
 
-.nav {
+.common-header .head .nav {
     display: block;
     /*width: 80;*/
     -webkit-transition: all .3s;
@@ -52,12 +52,12 @@
     transition: all .3s
 }
 
-.nav_pc {
+.common-header .head .nav .nav_pc {
     float: right;
     padding-right: 30px;
 }
 
-.nav ul li {
+.common-header .head .nav ul li {
     float: left;
     height: 82px;
     line-height: 82px;
@@ -66,7 +66,7 @@
 }
 
 
-.nav ul .a1 {
+.common-header .head .nav ul .a1 {
     text-align: center;
     font-size: 1.15rem;
     color: #667482;
@@ -74,12 +74,12 @@
     transition: all .3s
 }
 
-.nav ul .a1:hover {
+.common-header .head .nav ul .a1:hover {
     color: #6adaf7;;
     transition: all .3s
 }
 
-.nav ul .head-button {
+.common-header .head .nav ul .head-button {
     /*border-color: #ff5056;*/
     color: #ff5056;
     border: 3px solid #ff5056;
@@ -87,14 +87,14 @@
     padding: 15px 30px;
 }
 
-.nav ul .head-button:hover {
+.common-header .head .nav ul .head-button:hover {
     background: #ff5056;
     color: #fff !important;
     border-color: #ff5056;
 }
 
 
-.nav ul li .div1 {
+.common-header .head .nav ul li .div1 {
     display: none;
     background: #fff;
     width: 100%;
@@ -104,14 +104,14 @@
     z-index: 100
 }
 
-.nav ul li .div1 .p1 {
+.common-header .head .nav ul li .div1 .p1 {
     width: 57.4%;
     float: right;
     height: 65px;
     line-height: 65px
 }
 
-.nav ul li .div1 .p1 a {
+.common-header .head .nav ul li .div1 .p1 a {
     color: #999;
     font-size: 14px;
     text-transform: uppercase;
@@ -123,40 +123,22 @@
     transition: all .5s
 }
 
-.head-button {
 
-}
-
-
-.a_txt {
+.common-header .a_txt {
     display: none
 }
 
-/*小于1600大于1200稍微调整下字体*/
-/*@media screen and (max-width: 1600px) and (min-width: 768px) {*/
-/*    .nav ul li .a1 {*/
-/*        font-size: 14px*/
-/*    }*/
-
-.nav ul li .div1 .p1 a {
+.common-header .head .nav ul li .div1 .p1 a {
     font-size: 12px
 }
 
-.foot_top ul {
-    margin-left: 60px
-}
 
-.nav ul li .div1 .p1 {
+.common-header .head .nav ul li .div1 .p1 {
     width: 58%
 }
 
-/*}*/
 
-/*移动端导航*/
-/*@media screen and (max-width: 768px) and (min-width: 0px) {*/
-
-
-.moblie_head {
+.common-header .moblie_head {
     height: 82px;
     background: #fff;
     position: fixed;
@@ -177,7 +159,7 @@
     height: 30px;
 }
 
-.a_txt {
+.common-header .a_txt {
     display: block;
     position: fixed;
     top: 0px;
@@ -188,7 +170,7 @@
     z-index: 10000
 }
 
-.a_txt .div1 {
+.common-header .a_txt .div1 {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -200,7 +182,7 @@
     z-index: 1
 }
 
-.a_txt .div3 {
+.common-header .a_txt .div3 {
     position: absolute;
     width: 280px;
     right: 0px;
@@ -211,14 +193,14 @@
     right: -80%
 }
 
-.a_txt .div3 ul {
+.common-header .a_txt .div3 ul {
     text-align: left;
 }
 
-.a_txt .div3 ul li {
+.common-header .a_txt .div3 ul li {
 }
 
-.a_txt .div3 ul li a {
+.common-header .a_txt .div3 ul li a {
     height: 16px;
     line-height: 16px;
     display: block;
@@ -229,11 +211,11 @@
     padding: 12px 35px;
 }
 
-.a_txt .div3 ul li:first-child a {
+.common-header .a_txt .div3 ul li:first-child a {
     margin-bottom: 20px;
 }
 
-.moblie_head-button {
+.common-header .a_txt .div3 .moblie_head-button {
     /*padding: 0 !important;*/
     padding: 12px 0px!important;
     max-width: 175px!important;
@@ -248,7 +230,7 @@
 }
 
 
-.mobile-nav-button{
+.moblie_head .mobile-nav-button{
     color: #ff5056;
     border: 3px solid #ff5056;
     border-radius: 5px;
@@ -256,18 +238,13 @@
     display: inline-block;
     margin-top: 22px;
 }
-/*.a_txt .div3 ul li a:focus {*/
-/*    color: #6adaf7;*/
-/*    border-color: #6adaf7;*/
-/*    background: rgba(106,218,247,.05);*/
-/*}*/
 
-.a_txt .div3 ul li:first-child a:focus {
+.common-header .a_txt .div3 ul li:first-child a:focus {
     border-color: white;
     background: white;
 }
 
-.a_txt .div3 ul li:nth-child(1) img {
+.common-header .a_txt .div3 ul li:nth-child(1) img {
     float: right;
     width: 30px;
     height: auto;

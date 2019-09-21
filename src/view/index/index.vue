@@ -112,7 +112,7 @@
     <el-row>
       <el-col :xs="3" :sm="3" :md="3" :lg="3">&nbsp;</el-col>
       <el-col :xs="18" :sm="18" :md="18" :lg="18">
-        <p class="quote">
+        <p class="quote quote-font-size">
           "KlientBoost isn't your typical crapshoot,dime a dozen
           PPC agency.They actually understand quality traffic and
           more importantly,the
@@ -146,7 +146,7 @@
     </el-row>
     <!--图文结合三大组件-->
     <!--第1个-->
-    <el-row>
+    <el-row class="mt-80">
       <!--空格占位-->
       <el-col :xs="0" :sm="0" :md="1" :lg="1" class="block">&nbsp;</el-col>
       <!--左边字体-->
@@ -154,7 +154,7 @@
         <div class="middle-font text-center text-left">
           <h2>You'll Make More Money</h2>
           <div class="ContentBorder"></div>
-          <h3>From Facebook & Google Ads to custom landing pages,
+          <h3 class="index-h3-fontsize">From Facebook & Google Ads to custom landing pages,
             we help you discover the highest return
             on investment you've ever had.</h3>
         </div>
@@ -164,7 +164,7 @@
       <el-col :xs="24" :sm="24" class="middle-first-image-small hidden-md-and-up">&nbsp;</el-col>
     </el-row>
     <!--第2个-->
-    <el-row>
+    <el-row class="mt-80">
       <!--左边图片-->
       <el-col :md="10" :lg="10" class="middle-second-image-big hidden-sm-and-down">&nbsp;</el-col>
       <el-col :xs="24" :sm="24" class="middle-second-image-small hidden-md-and-up">&nbsp;</el-col>
@@ -172,7 +172,7 @@
         <div class="middle-font text-center text-left">
           <h2>You'll Work With Talent</h2>
           <div class="ContentBorder"></div>
-          <h3>
+          <h3 class="index-h3-fontsize">
             From deep PPC knowledge to conversion focused
             design,we bring the best of both worlds to grow your
             profitability.
@@ -181,7 +181,7 @@
       </el-col>
     </el-row>
     <!--第3个-->
-    <el-row>
+    <el-row class="mt-80">
       <!--空格占位-->
       <el-col :xs="0" :sm="0" :md="2" :lg="0" class="block">&nbsp;</el-col>
       <!--左边字体-->
@@ -189,7 +189,7 @@
         <div class="middle-font text-center text-left">
           <h2>You'll Grow Very Fast</h2>
           <div class="ContentBorder"></div>
-          <h3>
+          <h3 class="index-h3-fontsize">
             From quick wins to long term strategies,we create a
             profit rich environment to help you scale to new heights
             while maintaining costs.
@@ -218,7 +218,7 @@
     <el-row>
       <el-col :xs="3" :sm="3" :md="3" :lg="3">&nbsp;</el-col>
       <el-col :xs="18" :sm="18" :md="18" :lg="18">
-        <p class="quote">
+        <p class="quote quote-font-size">
           "I thought I knew everything I could about AdWords,
           but after spending just 5 minutes with these guys,I
           realized how much more I had to learn.KlientBoost does
@@ -476,7 +476,7 @@
   }
   /*引文*/
   .quote{
-    font-size: 1.5rem;
+    /*font-size: 1.5rem;*/
     font-weight: 500;
     line-height: 130%;
     margin: 20px 0 10px;
@@ -512,7 +512,6 @@
   }
 
   /*图文结合三大组件*/
-  /*col*/
   .middle-font{
     width: 450px;
     margin: 50px auto 0;
@@ -533,7 +532,8 @@
   }
   .middle-font h3{
     color: #667482;
-    font-size: 2rem;
+    width: 400px;
+    font-weight: 400;
     margin-bottom: 50px;
   }
   .middle-first-image-big{
