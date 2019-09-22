@@ -31,12 +31,12 @@
             </el-row>
 
             <!--中间三到五张图片转变-->
-            <el-row >
+            <el-row>
                 <!--空格占位-->
                 <el-col :xs="0" :sm="1" :md="1" :lg="1" class="block">&nbsp;</el-col>
                 <!--图片内容-->
                 <el-col :xs="24" :sm="22" :md="22" :lg="22">
-                    <el-row >
+                    <el-row>
                         <el-col :xs="8" :sm="4" :md="4" :lg="4">
                             <img src="../../assets/images/index/logo-sap-144x48-2x.png" alt="SPA" class="logo-image">
                         </el-col>
@@ -175,20 +175,21 @@
                     <div class="middle-font text-center text-left">
                         <h2>You'll Make More Money</h2>
                         <div class="ContentBorder"></div>
-                        <h3 class="index-h3-fontsize">From Facebook & Google Ads to custom landing pages,
-                            we help you discover the highest return
+                        <h3 class="index-h3-fontsize">From Facebook & Google Ads to custom <br/>landing pages,
+                            we help you discover the <br/>highest return
                             on investment you've ever had.</h3>
                     </div>
                 </el-col>
                 <!--右边图片-->
-                <el-col :md="12" :lg="13" class="middle-first-image-big hidden-xs-only">&nbsp;</el-col>
-                <el-col :xs="24" :sm="11" class="middle-first-image-small hidden-sm-and-up">&nbsp;</el-col>
+                <el-col :sm="12" :md="12" :lg="13" class="middle-first-image-big hidden-xs-only">&nbsp;</el-col>
+                <el-col :xs="24" class="middle-first-image-small hidden-sm-and-up">&nbsp;</el-col>
             </el-row>
             <!--第2个-->
-            <el-row >
+            <el-row class="LGmt--110">
                 <!--左边图片-->
-                <el-col :sm="12" :md="10" :lg="12" :xl="12" class="middle-second-image-big hidden-xs-only">&nbsp;</el-col>
-                <el-col :xs="24" :sm="12" :md="14" :lg="12">
+                <el-col :sm="12" :md="12" :lg="12" :xl="12" class="middle-second-image-big hidden-xs-only">&nbsp;</el-col>
+                <el-col :md="1" :lg="1" :xl="0" class="hidden-sm-and-down block">&nbsp;</el-col>
+                <el-col :xs="24" :sm="12" :md="11" :lg="11" class="XSmt-60">
                     <div class="middle-font text-center text-left">
                         <h2>You'll Work With Talent</h2>
                         <div class="ContentBorder"></div>
@@ -202,26 +203,26 @@
                 <el-col :xs="24" class="middle-second-image-small hidden-sm-and-up">&nbsp;</el-col>
             </el-row>
             <!--第3个-->
-            <el-row >
+            <el-row>
                 <!--空格占位-->
-                <el-col :xs="0" :sm="0" :md="2" :lg="0" class="block">&nbsp;</el-col>
+                <el-col :xs="0" :sm="1" :md="1" :lg="1" class="block">&nbsp;</el-col>
                 <!--左边字体-->
-                <el-col :xs="24" :sm="24" :md="10" :lg="11" class="mt-80">
+                <el-col :xs="24" :sm="11" :md="11" :lg="10" class="XSmt-60 mt-0">
                     <div class="middle-font text-center text-left">
                         <h2>You'll Grow Very Fast</h2>
                         <div class="ContentBorder"></div>
                         <h3 class="index-h3-fontsize">
-                            From quick wins to long term strategies,we create a
-                            profit rich environment to help you scale to new heights
-                            while maintaining costs.
+                            From quick wins to long term strategies,<br/>we create a
+                            profit rich environment to<br/> help you scale to new heights
+                            while <br/>maintaining costs.
                         </h3>
                     </div>
                 </el-col>
                 <!--右边图片-->
-                <el-col :md="12" :lg="13" class="middle-third-image-big hidden-sm-and-down">&nbsp;
+                <el-col :sm="12" :md="12" :lg="13" class="middle-third-image-big hidden-xs-only">&nbsp;
                     <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
                 </el-col>
-                <el-col :xs="24" :sm="24" class="middle-third-image-small hidden-md-and-up">&nbsp;
+                <el-col :xs="24" class="middle-third-image-small hidden-sm-and-up">&nbsp;
                 </el-col>
             </el-row>
             <!--第2个逗号分隔符-->
@@ -237,8 +238,8 @@
             </el-row>
             <!--第2个引文-->
             <el-row>
-                <el-col :xs="3" :sm="3" :md="3" :lg="3">&nbsp;</el-col>
-                <el-col :xs="18" :sm="18" :md="18" :lg="18">
+                <el-col :xs="3" :sm="3" :md="3" :lg="4">&nbsp;</el-col>
+                <el-col :xs="18" :sm="18" :md="18" :lg="16">
                     <p class="quote quote-font-size">
                         "I thought I knew everything I could about AdWords,
                         but after spending just 5 minutes with these guys,I
@@ -265,12 +266,14 @@
         </span>
                 </el-col>
             </el-row>
-
             <!--底部样式-->
             <el-row>
                 <el-col>
-                    <CommonFooterTop></CommonFooterTop>
+                    <CommonFooterTop :title="title"></CommonFooterTop>
                 </el-col>
+            </el-row>
+            <el-row>
+                <el-col class="footer-BU-img">&nbsp;</el-col>
             </el-row>
             <el-row>
                 <el-col>
@@ -305,7 +308,10 @@
           MenuItem5classTrue: 'false',
           MenuItem6classTrue: 'false',
           MenuItem7classTrue: 'false',
-        }
+        },
+        title: 'Hey there, AcceGen Biotech' +
+          '<img style="height: 40px;position: relative;top: 15px;margin: 0 0px 6px 6px;" ' +
+          'src="https://s.w.org/images/core/emoji/12.0.0-1/svg/1f44b.svg">'
       }
     }
   }
@@ -316,7 +322,11 @@
         font-family: Lato, Helvetica Neue, Helvetica;
     }
 
-    .index .mt-80{
+    .index .LGmt--110{
+        margin-top: -110px;
+    }
+
+    .index .mt-80 {
         margin-top: 80px;
     }
 
@@ -406,7 +416,7 @@
 
     /*三张图片链接*/
     .index .h2-1 {
-        font-size: 23px;
+        font-size: 26px;
         font-weight: 700;
         text-align: center;
         margin-top: 70px;
@@ -495,19 +505,21 @@
 
     /*引文*/
     .index .quote {
+        max-width: 800px;
         /*font-size: 1.5rem;*/
         font-weight: 500;
         line-height: 130%;
-        margin: 20px 0 10px;
+        margin: 20px auto 10px;
         display: block;
         color: #667482;
     }
 
-    .index .quote-font-size{
+    .index .quote-font-size {
         font-size: 21px;
     }
-    .index .index-h3-fontsize{
-        font-size: 21px;
+
+    .index .index-h3-fontsize {
+        font-size: 20px;
         margin: 0;
     }
 
@@ -534,6 +546,7 @@
         color: #667482;
         display: block;
         margin-top: 10px;
+        margin-bottom: 50px;
     }
 
     .index .company {
@@ -566,9 +579,13 @@
 
     .index .middle-font h3 {
         color: #667482;
-        max-width: 400px;
+        max-width: 500px;
         font-weight: 400;
         margin-bottom: 50px;
+    }
+
+    .index .text-left {
+        text-align: left;
     }
 
     .index .middle-first-image-big {
@@ -580,7 +597,7 @@
     }
 
     .index .middle-first-image-small {
-        width: 360px;
+        width: 278px;
         height: 200px;
         float: none;
         clear: both;
@@ -590,12 +607,10 @@
     }
 
     .index .middle-second-image-big {
-        /*width: 660px;*/
+        max-width: 660px;
         height: 374px;
-        /*float: left;*/
         background: url("../../assets/images/index/home-astronauts.png") no-repeat;
         background-size: 100% 100%;
-        /*background-position-x: -180px;*/
     }
 
     .index .middle-second-image-small {
@@ -609,8 +624,8 @@
     }
 
     .index .middle-third-image-big {
-        height: 43rem;
-        float: right;
+        height: 550px;
+        /*float: right;*/
         background: url("../../assets/images/index/illustration-plants.jpg") no-repeat;
         background-size: 100% 100%;
     }

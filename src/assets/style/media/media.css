@@ -3,6 +3,10 @@
     .footer-BB-img{
         margin-top: -340px!important;
     }
+
+    .footer-BU-img{
+        margin-top: -1020px!important;
+    }
     .common-footer-top .title h3 {
         max-width: 315px!important;
     }
@@ -28,10 +32,6 @@
         background-size: 40px 28px !important;
     }
 
-    .text-center {
-        text-align: center !important;
-    }
-
     .common-header .nav ul .a1 {
         font-size: 12px !important;
     }
@@ -48,6 +48,9 @@
 @media screen and (min-width: 600px) and (max-width: 768px) {
     .footer-BB-img{
         margin-top: -340px!important;
+    }
+    .footer-BU-img{
+        margin-top: -1000px!important;
     }
     .common-footer-top .title h3 {
         max-width: 315px!important;
@@ -68,11 +71,6 @@
         background: url("../../images/index/klientboost-logo-blue.png") right no-repeat !important;
         background-size: 95px 28px !important;
     }
-
-    .text-center {
-        text-align: center !important;
-    }
-
     .common-header .nav ul .a1 {
         font-size: 12px !important;
     }
@@ -90,14 +88,13 @@
 
 
 @media screen and (min-width: 768px) and (max-width: 900px) {
-    .text-center {
-        text-align: center !important;
-    }
-
     .common-header .head {
         display: none;
     }
 
+    .footer-BU-img{
+        margin-top: -750px!important;
+    }
     .common-header .moblie_head {
         display: block;
     }
@@ -110,9 +107,10 @@
 
 @media screen and (min-width: 900px) and (max-width: 992px) {
 
-    .text-center {
-        text-align: center !important;
+    .footer-BU-img{
+        margin-top: -780px!important;
     }
+
 
     .nav ul .a1 {
         font-size: 12px !important;

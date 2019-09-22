@@ -49,6 +49,10 @@
     /*background: yellow;*/
   }
 
+  .common-footer-top .title{
+      padding-top: 120px;
+  }
+
   .common-footer-top .title h3 {
     font-size: 1.95rem;
     color: white;

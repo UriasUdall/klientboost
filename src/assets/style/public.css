@@ -108,6 +108,16 @@ a {
     color: #fff;
 }
 
+/* 图片上边界边框图片 */
+.footer-BU-img{
+    margin-top: -800px;
+    height: 450px;
+    background: url("../../assets/images/index/dee33e03c5984ee93753f84be6095d12.png") top no-repeat;
+    background-size: 100% ;
+    margin-bottom: -2px;
+}
+
+
 
 /* 图片下边界边框图片 */
 .footer-BB-img{
