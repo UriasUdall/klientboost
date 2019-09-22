@@ -16,7 +16,7 @@
     width: 100%;
     /*min-width: 1000px;*/
     z-index: 9999;
-    background: rgba(255,255,255,0.93);
+    background: rgba(255,255,255,0.92);
     /*background: #F6F8FA;*/
     height: 82px;
     transition: all .3s
@@ -68,7 +68,7 @@
 
 .common-header .head .nav ul .a1 {
     text-align: center;
-    font-size: 1.15rem;
+    font-size: 15px;
     color: #667482;
     font-weight: 600;
     transition: all .3s
@@ -115,7 +115,7 @@
     color: #999;
     font-size: 14px;
     text-transform: uppercase;
-    background: white;
+    background: #eff0f2;
     display: inline-block;
     height: 65px;
     line-height: 65px;
@@ -140,7 +140,7 @@
 
 .common-header .moblie_head {
     height: 82px;
-    background: #fff;
+    background: rgba(255,255,255,0.92);
     position: fixed;
     top: 0px;
     left: 0px;

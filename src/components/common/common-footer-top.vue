@@ -1,26 +1,21 @@
 <template>
     <el-row class="common-footer-top">
-        <el-col>
+        <el-col style="position: relative">
             <el-row>
-                <el-col class="title">
-                    <h3>Over <strong>445 businesses</strong> got a proposal from us in <strong>August, 2019</strong>
-                    </h3>
+                <el-col class="hidden-sm-and-up foot-top-img ">
+                    <img src="../../assets/images/index/free-proposal-graphic-mobile.png" alt="">
                 </el-col>
-            </el-row>
-            <el-row>
-                <el-col class="foot-top-img">
+                <el-col class="hidden-xs-only foot-top-img">
                     <img src="../../assets/images/index/free-proposal-graphic-desktop.png" alt="">
                 </el-col>
             </el-row>
-            <el-row>
-                <el-col class="content">
+            <el-row style="z-index: 10;">
+                <el-col class="foot-top-content">
                     <a href="" class="btn-BRCW-BB">GET MY FREE PROPOSAL</a>
                 </el-col>
             </el-row>
             <el-row>
-                <el-col>
-                    <div class="footer-border-img"></div>
-                </el-col>
+                <el-col class="footer-BB-img">&nbsp;</el-col>
             </el-row>
         </el-col>
     </el-row>
@@ -45,10 +40,10 @@
     }
 
     .common-footer-top .title h3 {
-        font-size: 2rem;
+        font-size: 1.95rem;
         color: white;
         font-weight: 600;
-        margin-bottom: 45px;
+        margin:0 auto 30px;
         max-width: 100%;
     }
 
@@ -57,9 +52,9 @@
     }
 
     .common-footer-top .btn-BRCW-BB {
-        width: 250px;
-        padding: 18px 15px;
-        font-size: 1.4rem;
+        /*width: 300px;*/
+        padding: 18px 40px;
+        font-size: 16px;
         /*font-weight: 700;*/
     }
 
@@ -67,14 +62,6 @@
         border: 0px;
         max-width: 866px;
         width: 100%;
-        margin: 0 auto 30px;
-    }
-
-    .common-footer-top .footer-border-img{
-        margin-top: -100px;
-        width: 100%;
-        height: 290px;
-        background: url("../../assets/images/index/5b677ccb69601fde7ca3f49758f72f75.png") no-repeat;
-        background-size: 100%;
+        margin: 0 auto 50px;
     }
 </style>

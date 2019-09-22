@@ -1,0 +1,145 @@
+/* 媒体查询文件 */
+@media screen and (max-width: 600px) {
+    .index .content .rocket{
+        width: 60px!important;
+        margin-bottom: 20px!important;
+    }
+    .index .content h1{
+        font-size: 1.8rem!important;
+    }
+    .index .star{
+        background-size: 475px 365px!important;
+    }
+
+
+    .index .quote-font-size{
+        font-size: 16px!important;
+    }
+
+    .index .index-h3-fontsize{
+        font-size: 16px!important;
+        margin: 0 auto!important;
+    }
+    .index .middle-font h2{
+        font-size: 19px!important;
+    }
+    .index .author{
+        width: 70px!important;
+    }
+    .index .name{
+        font-size: 15px!important;
+    }
+    .index .title,
+    .index .company{
+        font-size: 14px!important;
+    }
+    .index .icon img{
+        width: 18px!important;
+    }
+    .index .icon-inner{
+        width: 42px!important;
+        height: 42px!important;
+        margin-top: 5px;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    .index .content .rocket{
+        width: 60px!important;
+        margin-bottom: 20px!important;
+    }
+    .index .content h1{
+        font-size: 1.8rem!important;
+    }
+    .index .star{
+        background-size: 475px 365px!important;
+    }
+    .index .quote-font-size{
+        font-size: 16px!important;
+    }
+
+    .index .index-h3-fontsize{
+        font-size: 18px!important;
+        margin: 0 auto 30px!important;
+    }
+    .index .middle-font h2{
+        font-size: 19px!important;
+    }
+    .index .author{
+        width: 70px!important;
+    }
+    .index .name{
+        font-size: 15px!important;
+    }
+    .index .title,
+    .index .company{
+        font-size: 14px!important;
+    }
+    .index .icon img{
+        width: 18px!important;
+    }
+    .index .icon-inner{
+        width: 42px!important;
+        height: 42px!important;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 900px) {
+    .index .index-h3-fontsize{
+        font-size: 18px!important;
+    }
+    .index .middle-font h2{
+        font-size: 22px!important;
+    }
+    .index .middle-font{
+        margin: 100px auto 0px!important;
+    }
+    .index .middle-first-image-big{
+        height: 360px!important;
+        width: 400px!important;
+    }
+}
+
+
+@media screen and (min-width: 900px) and (max-width: 992px) {
+    .index .index-h3-fontsize{
+        font-size: 18px!important;
+    }
+    .index .middle-font h2{
+        font-size: 22px!important;
+    }
+    .index .middle-font{
+        margin: 100px auto 0px!important;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .index .h2-1{
+        font-size: 28px!important;
+    }
+    .index .middle-font{
+        margin: 100px auto 0px!important;
+    }
+    .middle-second-image-big{
+        height: 283px!important;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1920px) {
+    .index .h2-1{
+        font-size: 28px!important;
+    }
+    .index .middle-font{
+        margin: 100px auto 0px!important;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .index .h2-1{
+        font-size: 28px!important;
+    }
+    .index .middle-font{
+        margin: 100px auto 0px!important;
+    }
+}

@@ -4,8 +4,8 @@
 <!--        <el-col class="block hidden-xs-only" :sm="0" :md="1" :lg="2" :xl="3">&nbsp;</el-col>-->
         <el-col class="head hidden-xs-only"  id="head">
             <el-row >
-                <el-col class="block hidden-xs-only" :sm="0" :md="0" :lg="1" :xl="3">&nbsp;</el-col>
-                <el-col class="header-logo hidden-xs-only" :sm="4" :md="4" :lg="4" :xl="4">
+                <el-col class="block hidden-md-and-down"  :lg="1" :xl="3">&nbsp;</el-col>
+                <el-col class="header-logo hidden-xs-only" :sm="4" :md="4" :lg="3" :xl="4">
                     <a href="javascript:;"><!--不进行跳转-->
                         <div class="logo-img"></div>
 <!--                        <div class="p1"></div>-->
@@ -13,7 +13,7 @@
                     </a>
                 </el-col>
 <!--                <el-col class="block hidden-xs-only" :sm="0" :md="4" :lg="4" :xl="3">&nbsp;</el-col>-->
-                <el-col class="nav hidden-xs-only" :sm="20" :md="20" :lg="18" :xl="14">
+                <el-col class="nav hidden-xs-only" :sm="20" :md="20" :lg="19" :xl="14">
                     <ul class="nav_pc">
                         <li>
                             <a class="a1" href="javascript:;">WHAT WE DO</a>
