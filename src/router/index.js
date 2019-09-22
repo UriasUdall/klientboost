@@ -1,9 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import index from '@/view/index'
-import footer from '@/view/footer'
 import contact from '@/view/contact'
-import test from '@/components/common/common-footer-top'
+import test from '@/components/common/common-footer-top-2'
 
 Vue.use(Router)
 
@@ -18,11 +17,6 @@ export default new Router({
       path: '/test',
       name: 'test',
       component: test
-    },
-    {
-      path: '/footer',
-      name: 'footer',
-      component: footer
     },
     {
       path: '/contact',

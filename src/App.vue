@@ -7,6 +7,7 @@
 <script>
   import '@/assets/style/media/media.css'
   import '@/assets/style/media/media-contact.css'
+  import '@/assets/style/media/media-common.css'
   import '@/assets/style/media/media-index.css'
   import '@/assets/style/public.css'
   import 'element-ui/lib/theme-chalk/display.css'

@@ -287,7 +287,7 @@
 
 <script>
   import CommonFooter from '@/components/common/common-footer'
-  import CommonFooterTop from '@/components/common/common-footer-top'
+  import CommonFooterTop from '@/components/common/common-footer-top-1'
   import CommonHeader from '@/components/common/common-header'
 
   export default {

@@ -1,0 +1,38 @@
+/* 媒体查询文件 */
+@media screen and (max-width: 768px) {
+    .common-footer-top-1 .title h3,
+    .common-footer-top-2 .title h3{
+        max-width: 300px!important;
+    }
+    .common-footer-top-3 .title h3{
+        max-width: 300px!important;
+    }
+
+    .common-footer-top-1 .foot-top-img img,
+    .common-footer-top-2 .foot-top-img img,
+    .common-footer-top-3 .foot-top-img img{
+        max-width: 350px!important;
+    }
+
+    .common-footer-top-1 .title h3,
+    .common-footer-top-2 .title h3,
+    .common-footer-top-3 .title h3{
+        font-size: 24px!important;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1920px) {
+
+}
+
+@media screen and (min-width: 1920px){
+
+}

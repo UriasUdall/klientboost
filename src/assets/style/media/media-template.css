@@ -1,0 +1,20 @@
+/* 媒体查询文件 */
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1920px) {
+
+}
+
+@media screen and (min-width: 1920px){
+
+}
