@@ -2,7 +2,10 @@
     <el-row>
         <el-col>
             <CommonHeader :ifSelect="ifSelect"></CommonHeader>
-            <CommonFooterTop></CommonFooterTop>
+            <el-row>
+
+            </el-row>
+            <CommonFooterTop :title="title"></CommonFooterTop>
             <CommonFooter></CommonFooter>
         </el-col>
     </el-row>
@@ -30,7 +33,8 @@
           MenuItem5classTrue: 'false',
           MenuItem6classTrue: 'false',
           MenuItem7classTrue: 'true',
-        }
+        },
+          title:'Over <strong>445 businesses</strong> got a proposal from us in <strong>August, 2019</strong>'
       }
     }
   }
