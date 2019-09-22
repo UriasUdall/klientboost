@@ -63,7 +63,7 @@ a {
     border-radius: 7px;
     cursor: pointer;
     line-height: 100%;
-    border: 2px solid #ff5056;
+    border: 3px solid #ff5056;
     outline: 0!important;
 }
 
@@ -126,4 +126,17 @@ a {
     background: url("../../assets/images/index/5b677ccb69601fde7ca3f49758f72f75.png") bottom no-repeat;
     background-size: 100% ;
     margin-bottom: -2px;
+}
+
+
+/* 黑色输入框 */
+.field input {
+  width: calc(100% - 24px);
+  height: 30px;
+  vertical-align: middle;
+  border: none;
+  background: transparent;
+  outline: none;
+  padding: 20px 12px;
+  font-size: 20px;
 }

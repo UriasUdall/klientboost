@@ -4,9 +4,16 @@
   }
   .bigTitle{
     padding: 30px 20px!important;
+
   }
   .bigTitle h2{
     height: 25px;
+  }
+  .sendBtn{
+    width: 100%;
+  }
+  .contactForm{
+    width: 100%;
   }
 }
 
@@ -16,10 +23,16 @@
     font-size: 18px;
   }
   .bigTitle{
-    padding: 30px 20px!important;
+    padding: 40px 20px!important;
   }
   .bigTitle h2{
     height: 25px;
+  }
+  .sendBtn{
+    width: 240px;
+  }
+  .contactForm{
+    width: 100%;
   }
 }
 
@@ -28,9 +41,17 @@
     height: 77px;
     font-size: 18px;
   }
-
+  .bigTitle{
+    padding: 40px 20px!important;
+  }
   .bigTitle h2{
     height: 25px;
+  }
+  .sendBtn{
+    width: 240px;
+  }
+  .contactForm{
+    width: 100%;
   }
 }
 
@@ -39,10 +60,19 @@
     height: 82px;
     font-size: 22px;
   }
-
+  .bigTitle{
+    padding: 40px 20px!important;
+  }
   .bigTitle h2{
     height: 30px;
     font-size: 24px!important;
+  }
+  .sendBtn{
+    width: 240px;
+  }
+  .contactForm{
+    max-width: 920px!important;
+    margin: 0 auto;
   }
 }
 
@@ -51,9 +81,19 @@
     height: 87px;
     font-size: 26px;
   }
+  .bigTitle{
+    padding: 45px 20px!important;
+  }
   .bigTitle h2{
     height: 30px;
     font-size: 26px!important;
+  }
+  .sendBtn{
+    width: 240px;
+  }
+  .contactForm{
+    max-width: 1150px!important;
+    margin: 0 auto;
   }
 }
 
@@ -65,5 +105,12 @@
   .bigTitle h2{
     height: 30px;
     font-size: 26px!important;
+  }
+  .sendBtn{
+    width: 240px;
+  }
+  .contactForm{
+    max-width: 1150px!important;
+    margin: 0 auto;
   }
 }
