@@ -14,10 +14,8 @@
     top: 0px;
     left: 0px;
     width: 100%;
-    /*min-width: 1000px;*/
     z-index: 9999;
     background: rgba(255,255,255,0.92);
-    /*background: #F6F8FA;*/
     height: 82px;
     transition: all .3s
 }
@@ -30,9 +28,7 @@
     line-height: 80px;
 }
 
-
-
-.common-header .logo-img {
+.common-header .header-logo .logo-img {
     padding-left: 20px;
     margin: auto;
     width: 143px;
@@ -65,7 +61,6 @@
     transition: all .3s
 }
 
-
 .common-header .head .nav ul .a1 {
     text-align: center;
     font-size: 15px;
@@ -80,7 +75,6 @@
 }
 
 .common-header .head .nav ul .head-button {
-    /*border-color: #ff5056;*/
     color: #ff5056;
     border: 3px solid #ff5056;
     border-radius: 5px;
@@ -101,14 +95,14 @@
     left: 0px;
     position: absolute;
     top: 101px;
-    z-index: 100
+    z-index: 100;
 }
 
 .common-header .head .nav ul li .div1 .p1 {
     width: 57.4%;
     float: right;
     height: 65px;
-    line-height: 65px
+    line-height: 65px;
 }
 
 .common-header .head .nav ul li .div1 .p1 a {
@@ -127,16 +121,6 @@
 .common-header .a_txt {
     display: none
 }
-
-.common-header .head .nav ul li .div1 .p1 a {
-    font-size: 12px
-}
-
-
-.common-header .head .nav ul li .div1 .p1 {
-    width: 58%
-}
-
 
 .common-header .moblie_head {
     height: 82px;
