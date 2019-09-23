@@ -1,13 +1,13 @@
 <template>
     <el-row class="common-header" style="height: 82px">
         <!--PC端导航开始-->
-        <el-col class="head hidden-xs-only"  id="head">
+        <el-col class="head1 hidden-xs-only"  id="head">
             <el-row >
                 <el-col class="block hidden-md-and-down"  :lg="1" :xl="3">&nbsp;</el-col>
                 <el-col class="header-logo hidden-xs-only" :sm="4" :md="4" :lg="3" :xl="4">
-                    <a href="javascript:;"><!--不进行跳转-->
+                    <a href="javascript:;">
+                      <!--不进行跳转-->
                         <div class="logo-img"></div>
-
                     </a>
                 </el-col>
                 <el-col class="nav hidden-xs-only" :sm="20" :md="20" :lg="19" :xl="14">
@@ -38,6 +38,7 @@
         </el-col>
         <!--PC端导航结束-->
 
+
         <!--移动端导航开始-->
         <el-col class="moblie_head hidden-md-and-up" >
             <el-row>
@@ -45,7 +46,6 @@
                 <el-col class="header-logo hidden-md-and-up" :xs="5" :sm="5" >
                     <a href="javascript:;">
                         <div class="logo-img"></div>
-                        <!--                        <div class="p1"></div>-->
                     </a>
                 </el-col>
 
@@ -114,6 +114,83 @@
             </div>
         </el-col>
         <!--移动端导航结束-->
+
+
+      <!--移动端2 导航开始-->
+      <el-col class="moblie_head1 hidden-md-and-up" >
+        <el-row>
+          <el-col class="block hidden-md-and-up":xs="0" :sm="0">&nbsp;</el-col>
+          <el-col class="header-logo hidden-md-and-up" :xs="5" :sm="5" >
+            <a href="javascript:;">
+              <div class="logo-img"></div>
+            </a>
+          </el-col>
+
+          <el-col class="hidden-sm-and-up" style="height: 82px" :xs="14" >
+            <div>
+              <a class="mobile-nav-button" href="">GET PROPOSAL</a>
+            </div>
+          </el-col>
+
+          <el-col :xs="5" :sm="19" class="hidden-md-and-up">
+            <div class="rg">
+              <a href="javascript:;" class="a_js">
+                <img src="https://3jbq2ynuxa-flywheel.netdna-ssl.com/wp-content/themes/klientboost/img/menu-bars-dark.svg" ></a>
+            </div>
+            <div class="clear"></div>
+          </el-col>
+        </el-row>
+      </el-col>
+
+
+      <el-col class="a_txt1 hidden-md-and-up" >
+
+        <div class="div1 a_closed"></div>
+
+        <div class="div3">
+          <ul>
+            <li>
+              <a href="javascript:;" class="a_closed">
+                <img src="https://3jbq2ynuxa-flywheel.netdna-ssl.com/wp-content/themes/klientboost/img/menu-close-dark.svg"
+                     width="22">
+              </a>
+            </li>
+            <li>
+              <a :class="{'HeaderMenuItemSelect':this.ifSelect.MenuItem1classTrue==='true'}"
+                 href="javascript:;">HOME</a>
+            </li>
+            <li>
+              <a class="a_js2" :class="{'HeaderMenuItemSelect':this.ifSelect.MenuItem2classTrue==='true'}"
+                 href="javascript:;">WHAT WE DO</a>
+            </li>
+            <li>
+              <a class="a_js2" :class="{'HeaderMenuItemSelect':this.ifSelect.MenuItem3classTrue==='true'}"
+                 href="javascript:;">TEAM</a>
+            </li>
+            <li>
+              <a class="a_js2" :class="{'HeaderMenuItemSelect':this.ifSelect.MenuItem4classTrue==='true'}"
+                 href="javascript:;">CASE STUDIE</a>
+            </li>
+            <li>
+              <a class="a_js2" :class="{'HeaderMenuItemSelect':this.ifSelect.MenuItem5classTrue==='true'}"
+                 href="javascript:;">SRESOURCES</a>
+            </li>
+            <li>
+              <a class="a_js2" :class="{'HeaderMenuItemSelect':this.ifSelect.MenuItem6classTrue==='true'}"
+                 href="javascript:;">BLOG</a>
+            </li>
+            <li>
+              <a class="a_js2" :class="{'HeaderMenuItemSelect':this.ifSelect.MenuItem7classTrue==='true'}"
+                 href="/contact">CONTACT</a>
+            </li>
+            <li>
+              <a class="a1 moblie_head-button" href="javascript:;">GET PROPOSAL</a>
+            </li>
+            <div class="clear"></div>
+          </ul>
+        </div>
+      </el-col>
+      <!--移动端2 导航结束-->
     </el-row>
 </template>
 
@@ -137,15 +214,6 @@
     },
     mounted () {
         $(function () {
-          //PC端鼠标浮动展示子导航
-          // $(".nav ul li").hover(
-          // 	function() {
-          // 		$(this).children('').next().stop(true, true).delay(300).slideDown(400);
-          // 	},
-          // 	function() {
-          // 		$(this).children('').next().stop(true, true).delay(300).slideUp(400);
-          // 	}
-          // );
           //点击逐渐展开移动端导航
           $('.a_js').click(
             function () {
