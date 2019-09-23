@@ -45,7 +45,7 @@
 
 <style scoped>
     .common-footer-top-1 {
-        background: #173147;
+        background: linear-gradient(#1B384F,#1D3E54);
         /*background: yellow;*/
     }
 
@@ -54,7 +54,7 @@
     }
 
     .common-footer-top-1 .title h3 {
-        font-size: 1.95rem;
+        font-size: 27px;
         color: white;
         font-weight: 500;
         margin: 0 auto 45px;

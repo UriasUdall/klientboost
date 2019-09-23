@@ -1,5 +1,5 @@
 <template>
-    <el-row class="index-footer">
+    <el-row class="index-footer BG-W">
         <el-col class="block" :xs="0" :sm="0" :md="1" :lg="2" :xl="3">&nbsp;</el-col>
         <el-col class="content" :xs="24" :sm="24" :md="22" :lg="20" :xl="18" style="background: white">
             <el-row class="our-link">
@@ -21,7 +21,7 @@
                             <a href="">Blog</a>
                         </li>
                         <li>
-                            <a href="">Careers</a>
+                            <a href="/carres">Careers</a>
                         </li>
                         <li>
                             <a href="/contact">Contact Us</a>
@@ -96,8 +96,8 @@
                 </el-col>
             </el-row>
             <el-row class="hr-line">
-                <el-col :xs="0" :sm="2" :md="3" :lg="0" :xl="4" class="block">&nbsp;</el-col>
-                <el-col :xs="24" :sm="20" :md="18" :lg="24" :xl="16" class="hr">&nbsp;</el-col>
+                <el-col :xs="0" :sm="2" :md="2" :lg="4" :xl="4" class="block">&nbsp;</el-col>
+                <el-col :xs="24" :sm="20" :md="20" :lg="16" :xl="16" class="hr">&nbsp;</el-col>
             </el-row>
             <el-row>
                 <el-col :xs="0" :sm="4" :md="4" :lg="4" :xl="7" class="block">&nbsp;</el-col>

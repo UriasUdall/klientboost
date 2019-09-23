@@ -55,6 +55,55 @@ a {
   margin: 20px auto 45px;
 }
 
+.MB-80{
+    margin-top: 80px;
+}
+
+.MB-60{
+    margin-top: 60px;
+}
+
+.MB-40{
+    margin-top: 40px;
+}
+
+.MB-80-I{
+    margin-top: 80px!important;
+}
+
+.MB-40-I{
+    margin-top: 40px!important;
+}
+
+.MB-60-I{
+    margin-top: 60px!important;
+}
+
+.MT-80{
+    margin-top: 80px;
+}
+
+.MT-40{
+    margin-top: 40px;
+}
+
+.MT-60{
+    margin-top: 60px;
+}
+
+.MT-80-I{
+    margin-top: 80px!important;
+}
+
+.MT-40-I{
+    margin-top: 40px!important;
+}
+
+.MT-60-I{
+    margin-top: 60px!important;
+}
+
+
 /* 按钮公共样式 */
 .btn-BWCR{
   display: inline-block;
@@ -139,4 +188,42 @@ a {
   outline: none;
   padding: 20px 12px;
   font-size: 20px;
+}
+
+
+/* 浅蓝黑色背景 */
+.BG-BB-LG{
+    background: linear-gradient(#0E2036,#1B384F);
+}
+
+.BG-W{
+    background: white;
+}
+
+
+/*页面大标题*/
+.page-title{
+    padding: 15px 0px;
+    color: white;
+    font-size: 34px;
+}
+
+.whiteBorder {
+    margin: auto;
+    width: 80px;
+    height: 2px;
+    background-color: white;
+}
+
+
+/* 页面内容框 */
+.page-content{
+    max-width: 1139px;
+    background: white;
+    margin: 80px auto 0px;
+}
+
+
+.full{
+    width: 100%;
 }

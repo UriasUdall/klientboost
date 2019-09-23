@@ -29,13 +29,13 @@
 
 <style scoped>
     .common-footer-top-2 {
-        background: #0F2036;
+        background: linear-gradient(#1B384F,#1D3E54);
     }
     .common-footer-top-2 .title {
         padding-top: 120px;
     }
     .common-footer-top-2 .title h3 {
-        font-size: 36px;
+        font-size: 27px;
         color: white;
         font-weight: 500;
         margin: 0 auto 45px;

@@ -30,11 +30,11 @@
     }
 
     .common-header .head {
-        display: none;
+        display: none!important;
     }
 
     .common-header .moblie_head {
-        display: block;
+        display: block!important;
     }
 }
 
@@ -63,11 +63,11 @@
     }
 
     .common-header .head {
-        display: none;
+        display: none!important;
     }
 
     .moblie_head {
-        display: block;
+        display: block!important;
     }
 }
 
@@ -76,14 +76,14 @@
 
 @media screen and (min-width: 768px) and (max-width: 900px) {
     .common-header .head {
-        display: none;
+        display: none!important;
     }
 
     .footer-BU-img{
         margin-top: -750px!important;
     }
     .common-header .moblie_head {
-        display: block;
+        display: block!important;
     }
 
     .common-header .nav ul .a1 {
@@ -104,11 +104,11 @@
     }
 
     .common-header .head {
-        display: block;
+        display: block!important;
     }
 
     .common-header .moblie_head {
-        display: none;
+        display: none!important;
     }
 }
 
@@ -118,11 +118,11 @@
     }
 
     .common-header .head {
-        display: block;
+        display: block!important;
     }
 
     .common-header .moblie_head {
-        display: none;
+        display: none!important;
     }
 
     .common-header .nav ul .a1 {
