@@ -66,7 +66,6 @@
         </el-col>
 
 
-
         <el-col class="a_txt hidden-md-and-up" >
 
             <div class="div1 a_closed"></div>
