@@ -134,7 +134,6 @@
                     </div>
                   </div>
                 </el-col>
-
               </el-row>
 
 
@@ -208,7 +207,6 @@
   }
 
   .contactPage .bigTitle {
-    /*padding: 45px 20px;*/
     border-bottom: #6adaf7 solid 1px;
     background-color: #F7FBFC;
   }

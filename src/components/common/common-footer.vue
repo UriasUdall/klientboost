@@ -18,7 +18,7 @@
                             <a href="">Case Studies</a>
                         </li>
                         <li>
-                            <a href="">Blog</a>
+                            <a href="/blog">Blog</a>
                         </li>
                         <li>
                             <a href="/carres">Careers</a>

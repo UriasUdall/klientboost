@@ -25,7 +25,7 @@
                             <a class="a1" href="javascript:;">RESOURCES</a>
                         </li>
                         <li>
-                            <a class="a1" href="javascript:;">BLOG</a>
+                            <a class="a1" href="/blog">BLOG</a>
                         </li>
                         <li>
                             <a class="a1 head-button" href="javascript:;">GET PROPOSAL</a>
@@ -100,7 +100,7 @@
                     </li>
                     <li>
                         <a class="a_js2" :class="{'HeaderMenuItemSelect':this.ifSelect.MenuItem6classTrue==='true'}"
-                           href="javascript:;">BLOG</a>
+                           href="/blog">BLOG</a>
                     </li>
                     <li>
                         <a class="a_js2" :class="{'HeaderMenuItemSelect':this.ifSelect.MenuItem7classTrue==='true'}"
