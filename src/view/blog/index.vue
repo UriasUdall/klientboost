@@ -35,11 +35,24 @@
                   </div>
                 </el-col>
               </el-row>
+              <!--表单输入框-->
+              <el-row>
+                <el-col>
+                  <div class="formTitle">
+                    <h1>Get PPC&CRO Knowledge Right To Your Inbox</h1>
+                    <p>Covering topics to help your business make more money</p>
+                    <form action="#" class="form">
+                      <input type="email" placeholder="Your favorite Email" class="email" id="email">
+                      <input type="submit" value="SUBSCRIBE TO THE BLOG" class="button btn-BRCW">
+                    </form>
+                  </div>
+                </el-col>
+              </el-row>
+
             </el-col>
           </el-row>
         </el-col>
       </el-row>
-
 
       <!--主体结束-->
 
@@ -95,15 +108,46 @@
     text-align: center;
     margin: 0 auto 40px;
   }
-  .blogPage .page-content .title a{
+
+  .blogPage .page-content .title a {
     padding: 16px 40px;
   }
-  .page-content .smile-ima{
+
+  .page-content .smile-ima {
     width: 80%;
     padding-left: 30px;
   }
-  .page-content .smile-ima img{
+
+  .page-content .smile-ima img {
     width: 100%;
     margin: auto;
+  }
+  .blogPage .page-content .formTitle h1{
+    font-size: 28px;
+    margin: 0 auto;
+    font-weight: 500;
+    line-height: 115%;
+    color:#30383f;
+    padding: 0 10px;
+  }
+  .blogPage .page-content .formTitle p{
+    color:#667482 ;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 115%;
+    margin-top: 10px;
+  }
+  .blogPage .page-content .formTitle .form .email{
+    /*width: 100%;*/
+    /*margin-bottom: 12px;*/
+    margin-right: 15px;
+    border: 2px solid #d6dade;
+    background: none;
+    line-height: 100%;
+    height: 42px;
+    outline: 0;
+  }
+  .blogPage .page-content .formTitle .form .button{
+    padding: 10px 30px;
   }
 </style>
