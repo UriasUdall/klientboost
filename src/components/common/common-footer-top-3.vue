@@ -41,7 +41,13 @@
       CommonFooter
     },
     props: {
-      title: ''
+      title: '',
+      pd:''
+    },
+    data(){
+      return{
+        PaD:'padding-top:'+this.pd+'px'
+      }
     }
   }
 </script>

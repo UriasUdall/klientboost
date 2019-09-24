@@ -187,7 +187,8 @@
             <!--第2个-->
             <el-row class="LGmt--110">
                 <!--左边图片-->
-                <el-col :sm="12" :md="12" :lg="12" :xl="12" class="middle-second-image-big hidden-xs-only">&nbsp;</el-col>
+                <el-col :sm="12" :md="12" :lg="12" :xl="12" class="middle-second-image-big hidden-xs-only">&nbsp;
+                </el-col>
                 <el-col :md="1" :lg="1" :xl="0" class="hidden-sm-and-down block">&nbsp;</el-col>
                 <el-col :xs="24" :sm="12" :md="11" :lg="11" class="XSmt-60">
                     <div class="middle-font text-center text-left">
@@ -269,7 +270,7 @@
             <!--底部样式-->
             <el-row>
                 <el-col>
-                    <CommonFooterTop :title="title"></CommonFooterTop>
+                    <CommonFooterTop :title="title" :pd="pd"></CommonFooterTop>
                 </el-col>
             </el-row>
             <el-row>
@@ -299,6 +300,7 @@
     },
     data () {
       return {
+        pd: 120,
         isNowPage: true,
         ifSelect: {
           MenuItem1classTrue: 'true',
@@ -322,7 +324,7 @@
         font-family: Lato, Helvetica Neue, Helvetica;
     }
 
-    .index .LGmt--110{
+    .index .LGmt--110 {
         margin-top: -110px;
     }
 

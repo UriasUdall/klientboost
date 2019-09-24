@@ -2,7 +2,7 @@
     <el-row class="common-footer-top-1">
         <el-col style="position: relative">
             <el-row>
-                <el-col class="title">
+                <el-col class="title" :style="PaD">
                     <h3 v-html="title">
                     </h3>
                 </el-col>
@@ -38,7 +38,13 @@
       CommonFooter
     },
     props: {
-      title: ''
+      title: '',
+      pd:''
+    },
+    data(){
+      return{
+        PaD:'padding-top:'+this.pd+'px'
+      }
     }
   }
 </script>
@@ -50,7 +56,7 @@
     }
 
     .common-footer-top-1 .title {
-        padding-top: 120px;
+
     }
 
     .common-footer-top-1 .title h3 {

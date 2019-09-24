@@ -33,7 +33,7 @@
             <!--主体结束-->
 
             <!--底部开始-->
-            <CommonFooterTop :title="title"></CommonFooterTop>
+            <CommonFooterTop :title="title" :pd="pd"></CommonFooterTop>
             <CommonFooter></CommonFooter>
             <!--底部开始-->
         </el-col>
@@ -54,6 +54,7 @@
     },
     data () {
       return {
+        pd:60,
         ifSelect: {
           MenuItem1classTrue: 'false',
           MenuItem2classTrue: 'false',

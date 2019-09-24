@@ -2,7 +2,7 @@
     <el-row class="common-footer-top-2">
         <el-col style="position: relative">
             <el-row>
-                <el-col class="title">
+                <el-col class="title" :style="PaD">
                     <h3>We help our clients make more money</h3>
                 </el-col>
             </el-row>
@@ -22,7 +22,13 @@
   export default {
     name: 'common-footer-top-2',
     props:{
-      title2:''
+      title2:'',
+      pd:''
+    },
+    data(){
+      return{
+        PaD:'padding-top:'+this.pd+'px'
+      }
     }
   }
 </script>

@@ -5,7 +5,7 @@
             <el-row >
                 <el-col class="block hidden-md-and-down"  :lg="1" :xl="3">&nbsp;</el-col>
                 <el-col class="header-logo hidden-xs-only" :sm="4" :md="4" :lg="3" :xl="4">
-                    <a href="javascript:;">
+                    <a href="/">
                       <!--不进行跳转-->
                         <div class="logo-img"></div>
                     </a>
