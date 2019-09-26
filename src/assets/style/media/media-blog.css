@@ -3,6 +3,16 @@
     width: 220px!important;
     margin: 0 auto 10px!important;
   }
+  .blogPage .page-content .formTitle .form{
+    max-width: 400px;
+    margin: auto;
+  }
+  .blogPage .page-content .formTitle .form .email{
+    width: 100% !important;
+  }
+  .blogPage .page-content .formTitle .form .button{
+    width: 100% !important;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 960px){
   .blogPage .page-content .title a{
@@ -12,9 +22,17 @@
   }
   .blogPage .page-content .formTitle .form{
     max-width: 400px;
-    margin: auto;
+  }
+  .blogPage .page-content .formTitle .form .email{
+    width: 100% !important;
+    font-size: 16px!important;
+  }
+  .blogPage .page-content .formTitle .form .button{
+    width: 100% !important;
+    font-size: 16px!important;
   }
 }
+
 @media screen and (min-width: 960px) and (max-width: 992px){
   .blogPage .page-content .title h1 {
     margin: 0px auto 20px!important;
@@ -23,6 +41,24 @@
     width: 220px!important;
     margin: 0 auto 10px!important;
     font-size: 16px!important;
+  }
+  .blogPage .page-content .formTitle .form{
+    max-width: 600px!important;
+    margin: 0 auto;
+  }
+  .blogPage .page-content .formTitle .form .email{
+    width: 47% !important;
+    float: left;
+  }
+  .blogPage .page-content .formTitle .form .button{
+    width: 47% !important;
+    float: right;
+  }
+  .blogPage .page-content .backgroundIma .titleCon .featureClass {
+    font-size: 22px!important;
+  }
+  .blogPage .page-content .backgroundIma .titleCon .featureH2{
+    font-size: 28px!important;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1200px){
@@ -40,6 +76,28 @@
     font-size:18px!important;
     float: left!important;
   }
+  .blogPage .page-content .formTitle .form{
+    max-width: 700px!important;
+    margin: 0 auto;
+  }
+  .blogPage .page-content .formTitle .form .email{
+    width: 47% !important;
+    float: left;
+    font-size: 18px!important;
+  }
+  .blogPage .page-content .formTitle .form .button{
+    width: 47% !important;
+    float: right;
+    font-size: 18px!important;
+  }
+  .blogPage .page-content .backgroundIma .titleCon .featureClass {
+    font-size: 22px!important;
+    margin: 150px auto 10px!important;
+  }
+  .blogPage .page-content .backgroundIma .titleCon .featureH2{
+    font-size: 36px!important;
+    margin: 30px auto 150px!important;
+  }
 }
 @media screen and (min-width: 1200px) and (max-width: 1920px){
   .blogPage .page-content .title .text-left p{
@@ -54,6 +112,28 @@
     text-align: center!important;
     float: left;
   }
+  .blogPage .page-content .formTitle .form{
+    max-width: 800px!important;
+    margin: 0 auto;
+  }
+  .blogPage .page-content .formTitle .form .email{
+    width: 47% !important;
+    float: left;
+    font-size: 18px!important;
+  }
+  .blogPage .page-content .formTitle .form .button{
+    width: 47% !important;
+    float: right;
+    font-size: 18px!important;
+  }
+  .blogPage .page-content .backgroundIma .titleCon .featureClass {
+    font-size: 22px!important;
+    margin: 150px auto 10px!important;
+  }
+  .blogPage .page-content .backgroundIma .titleCon .featureH2{
+    font-size: 36px!important;
+    margin: 30px auto 150px!important;
+  }
 }
 @media screen and (min-width: 1920px){
   .blogPage .page-content .title .text-left p{
@@ -67,5 +147,27 @@
     padding: 16px 35px!important;
     text-align: center!important;
     float: left;
+  }
+  .blogPage .page-content .formTitle .form{
+     max-width: 800px!important;
+     margin: 0 auto;
+   }
+  .blogPage .page-content .formTitle .form .email{
+    width: 47% !important;
+    float: left;
+    font-size: 18px!important;
+  }
+  .blogPage .page-content .formTitle .form .button{
+    width: 47% !important;
+    float: right;
+    font-size: 18px!important;
+  }
+  .blogPage .page-content .backgroundIma .titleCon .featureClass {
+    font-size: 22px!important;
+    margin: 150px auto 10px!important;
+  }
+  .blogPage .page-content .backgroundIma .titleCon .featureH2{
+    font-size: 36px!important;
+    margin: 30px auto 150px!important;
   }
 }
