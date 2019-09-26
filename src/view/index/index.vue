@@ -118,53 +118,11 @@
                     VIEW OUR CASE STUDIES
                 </a>
             </el-row>
-            <!--逗号分隔符-->
-            <el-row>
-                <el-col>
-                    <div class="border"></div>
-                    <div class="icon">
-                        <div class="icon-inner">
-                            <img src="../../assets/images/index/quote.png" alt="">
-                        </div>
-                    </div>
-                </el-col>
-            </el-row>
-            <!--引文-->
-            <el-row>
-                <el-col :xs="3" :sm="3" :md="3" :lg="3">&nbsp;</el-col>
-                <el-col :xs="18" :sm="18" :md="18" :lg="18">
-                    <p class="quote quote-font-size">
-                        "KlientBoost isn't your typical crapshoot,dime a dozen
-                        PPC agency.They actually understand quality traffic and
-                        more importantly,the
-                        <strong>
-                            vitalness of conversion.
-                        </strong>
-                        If you have a chance to work with them,take it.
-                        <strong>
-                            They're marketing unicorns.
-                        </strong>"
-                    </p>
 
-                </el-col>
-            </el-row>
-            <!--作者图片-->
-            <el-row>
-                <el-col>
-                    <div class="author">
-                        <img src="../../assets/images/index/8856b64e-c2c9-4358-846b-351492d56f44-400x400.jpg"
-                             alt="Oli Gardner">
-                    </div>
-                </el-col>
-            </el-row>
-            <el-row>
-                <el-col>
-                    <h3 class="name">Oli Gardner</h3>
-                    <span class="title">Co-Founder @
-          <a href="http://unbounce.com" class="company" target="_blank">Unbounce</a>
-        </span>
-                </el-col>
-            </el-row>
+            <!--引文-->
+            <Sentence :content="content[0]"></Sentence>
+
+
             <!--图文结合三大组件-->
             <!--第1个-->
             <el-row class="mt-80">
@@ -226,47 +184,10 @@
                 <el-col :xs="24" class="middle-third-image-small hidden-sm-and-up">&nbsp;
                 </el-col>
             </el-row>
-            <!--第2个逗号分隔符-->
-            <el-row style="margin-top: 40px">
-                <el-col>
-                    <div class="border"></div>
-                    <div class="icon">
-                        <div class="icon-inner">
-                            <img src="../../assets/images/index/quote.png" alt="">
-                        </div>
-                    </div>
-                </el-col>
-            </el-row>
-            <!--第2个引文-->
-            <el-row>
-                <el-col :xs="3" :sm="3" :md="3" :lg="4">&nbsp;</el-col>
-                <el-col :xs="18" :sm="18" :md="18" :lg="16">
-                    <p class="quote quote-font-size">
-                        "I thought I knew everything I could about AdWords,
-                        but after spending just 5 minutes with these guys,I
-                        realized how much more I had to learn.KlientBoost does
-                        <strong>more than just produce results,</strong>
-                        they teach you along the way."
-                    </p>
-                </el-col>
-            </el-row>
-            <!--第2个作者图片-->
-            <el-row>
-                <el-col>
-                    <div class="author">
-                        <img src="../../assets/images/index/9aefb1e0f33bc33eeadff6ab053395c8.jpeg"
-                             alt="Thue Madsen">
-                    </div>
-                </el-col>
-            </el-row>
-            <el-row>
-                <el-col>
-                    <h3 class="name">Thue Madsen</h3>
-                    <span class="title">Marketing Ops. Manager @
-          <a href="http://teitter.com/ThueLMadsen" class="company" target="_blank">Kissmetrics</a>
-        </span>
-                </el-col>
-            </el-row>
+
+            <Sentence :content="content[1]"></Sentence>
+
+
             <!--底部样式-->
             <el-row>
                 <el-col>
@@ -290,18 +211,37 @@
   import CommonFooter from '@/components/common/common-footer'
   import CommonFooterTop from '@/components/common/common-footer-top-1'
   import CommonHeader from '@/components/common/common-header'
+  import Sentence from '@/components/sentence'
 
   export default {
     name: 'index',
     components: {
       CommonFooter,
       CommonHeader,
-      CommonFooterTop
+      CommonFooterTop,
+      Sentence
     },
     data () {
       return {
         pd: 120,
         isNowPage: true,
+        content: [{
+          quoteText: '"KlientBoost isn\'t your typical crapshoot,dime a dozen PPC agency.They actually understand quality traffic and more importantly,the<strong>vitalness of conversion.</strong> If you have a chance to work with them,take it.<strong>They\'re marketing unicorns.</strong>"',
+          authorImg: require('../../assets/images/index/8856b64e-c2c9-4358-846b-351492d56f44-400x400.jpg'),
+          authorName: 'Oli Gardner',
+          autorText: 'Co-Founder @',
+          linkTo: '',
+          authorCompany: 'Unbounce'
+        },
+        {
+          quoteText: '"I thought I knew everything I could about AdWords, but after spending just 5 minutes with these guys,I realized how much more I had to learn.KlientBoost does<strong>more than just produce results,</strong>they teach you along the way."',
+          authorImg: require('../../assets/images/index/9aefb1e0f33bc33eeadff6ab053395c8.jpeg'),
+          authorName: 'Thue Madsen',
+          autorText: 'Marketing Ops. Manager @',
+          linkTo: '',
+          authorCompany: 'Kissmetrics'
+        }
+        ],
         ifSelect: {
           MenuItem1classTrue: 'true',
           MenuItem2classTrue: 'false',
@@ -431,35 +371,6 @@
         margin: 20px auto 40px;
     }
 
-    .index .lightbox-btn {
-        position: relative;
-    }
-
-    .index .lightbox-a {
-        display: block;
-        position: absolute;
-        left: 50%;
-        top: 40%;
-        -webkit-transform: translate(-50%, -50%);
-        cursor: pointer;
-    }
-
-    .index .lightbox-a img {
-        max-width: 75px;
-    }
-
-    .index .lightbox-btn img {
-        width: 100%;
-    }
-
-    .index .lightbox-btn p {
-        color: #55616d;
-        font-weight: 700;
-        font-size: 20px;
-        text-align: center;
-        margin: 7px 0 20px;
-    }
-
     .btn-BWCR {
         font-size: 17px;
         padding: 21px 36px;
@@ -472,90 +383,46 @@
         color: white;
     }
 
-    /*逗号分隔符*/
-    .index .border {
-        height: 2px;
-        background: #11253c;
-        width: 250px;
-        margin: 20px auto 0;
-    }
-
-    .index .icon {
-        height: 75px;
-        width: 90px;
-        margin: -30px auto auto;
-        background: #fff;
-    }
-
-    .index .icon-inner {
-        height: 60px;
-        width: 60px;
-        background: #11253c;
-        color: #fff;
-        border-radius: 999px;
-        white-space: nowrap;
-        display: inline-block;
-        text-align: center;
-    }
-
-    .index .icon img {
-        width: 26px;
-        display: inline-block;
-        vertical-align: middle;
-        margin-top: 30%;
-    }
-
-    /*引文*/
-    .index .quote {
-        max-width: 800px;
-        /*font-size: 1.5rem;*/
-        font-weight: 500;
-        line-height: 130%;
-        margin: 20px auto 10px;
-        display: block;
-        color: #667482;
-    }
-
-    .index .quote-font-size {
-        font-size: 21px;
-    }
 
     .index .index-h3-fontsize {
         font-size: 20px;
         margin: 0;
     }
 
-    /*作者*/
-    .index .author {
-        width: 120px;
-        margin: 20px auto 20px;
-    }
+    /*!*逗号分隔符*!*/
+    /*.index .border {*/
+    /*    height: 2px;*/
+    /*    background: #11253c;*/
+    /*    width: 250px;*/
+    /*    margin: 20px auto 0;*/
+    /*}*/
 
-    .index .author img {
-        border-radius: 999px;
-        width: 100%;
-    }
+    /*.index .icon {*/
+    /*    height: 75px;*/
+    /*    width: 90px;*/
+    /*    margin: -30px auto auto;*/
+    /*    background: #fff;*/
+    /*}*/
 
-    .index .name {
-        font-size: 21px;
-        font-weight: 700;
-        margin: 0 0 2px;
-    }
+    /*.index .icon-inner {*/
+    /*    height: 60px;*/
+    /*    width: 60px;*/
+    /*    background: #11253c;*/
+    /*    color: #fff;*/
+    /*    border-radius: 999px;*/
+    /*    white-space: nowrap;*/
+    /*    display: inline-block;*/
+    /*    text-align: center;*/
+    /*}*/
 
-    .index .title {
-        font-size: 18px;
-        font-weight: 400;
-        color: #667482;
-        display: block;
-        margin-top: 10px;
-        margin-bottom: 50px;
-    }
+    /*.index .icon img {*/
+    /*    width: 26px;*/
+    /*    display: inline-block;*/
+    /*    vertical-align: middle;*/
+    /*    margin-top: 30%;*/
+    /*}*/
 
-    .index .company {
-        color: #30383f;
-        cursor: pointer;
-        font-size: 18px;
-    }
+
 
     /*图文结合三大组件*/
     .index .middle-font {

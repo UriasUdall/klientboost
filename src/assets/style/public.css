@@ -227,3 +227,38 @@ a {
 .full{
     width: 100%;
 }
+
+.lightbox-btn {
+    position: relative;
+}
+
+.lightbox-a {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    -webkit-transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.lightbox-a img {
+    max-width: 75px;
+}
+
+.lightbox-btn img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.lightbox-btn p {
+    color: #55616d;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    margin: 7px 0 20px;
+}
+
+
+.OH{
+    overflow: hidden;
+}

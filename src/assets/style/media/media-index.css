@@ -18,10 +18,6 @@
     }
 
 
-    .index .quote-font-size {
-        font-size: 16px !important;
-    }
-
     .index .index-h3-fontsize {
         font-size: 16px !important;
         margin: 0 auto !important;
@@ -37,28 +33,6 @@
         margin-top: 0px!important;
     }
 
-    .index .author {
-        width: 70px !important;
-    }
-
-    .index .name {
-        font-size: 15px !important;
-    }
-
-    .index .title,
-    .index .company {
-        font-size: 14px !important;
-    }
-
-    .index .icon img {
-        width: 18px !important;
-    }
-
-    .index .icon-inner {
-        width: 42px !important;
-        height: 42px !important;
-        margin-top: 5px;
-    }
     .mt-40{
         margin-top: 40px!important;
     }
@@ -85,9 +59,6 @@
         background-size: 475px 365px !important;
     }
 
-    .index .quote-font-size {
-        font-size: 16px !important;
-    }
 
     .index .index-h3-fontsize {
         font-size: 16px !important;
@@ -103,29 +74,6 @@
     .index .middle-font:nth-child(1) h2 {
         margin-top: 0px!important;
         font-size: 19px !important;
-    }
-
-    .index .author {
-        width: 70px !important;
-    }
-
-    .index .name {
-        font-size: 15px !important;
-    }
-
-    .index .title,
-    .index .company {
-        font-size: 14px !important;
-    }
-
-    .index .icon img {
-        width: 18px !important;
-    }
-
-    .index .icon-inner {
-        width: 42px !important;
-        height: 42px !important;
-        margin-top: 10px;
     }
 
     .mt-40{

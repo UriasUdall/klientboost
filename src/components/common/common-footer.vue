@@ -15,7 +15,7 @@
                             <a href="">What We Do</a>
                         </li>
                         <li>
-                            <a href="">Case Studies</a>
+                            <a href="/caseStudies">Case Studies</a>
                         </li>
                         <li>
                             <a href="/blog">Blog</a>

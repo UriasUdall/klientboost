@@ -19,7 +19,7 @@
                             <a class="a1" href="javascript:;">TEAM</a>
                         </li>
                         <li>
-                            <a class="a1" href="javascript:;">CASE STUDIES</a>
+                            <a class="a1" href="/caseStudies">CASE STUDIES</a>
                         </li>
                         <li>
                             <a class="a1" href="javascript:;">RESOURCES</a>
@@ -58,6 +58,7 @@
                 <el-col :xs="5" :sm="19" class="hidden-md-and-up">
                     <div class="rg">
                         <a href="javascript:;" class="a_js">
+<!--                            <div class="more"></div>-->
                             <img src="https://3jbq2ynuxa-flywheel.netdna-ssl.com/wp-content/themes/klientboost/img/menu-bars-dark.svg" ></a>
                     </div>
                     <div class="clear"></div>
@@ -80,7 +81,7 @@
                     </li>
                     <li>
                         <a :class="{'HeaderMenuItemSelect':this.ifSelect.MenuItem1classTrue==='true'}"
-                           href="javascript:;">HOME</a>
+                           href="/">HOME</a>
                     </li>
                     <li>
                         <a class="a_js2" :class="{'HeaderMenuItemSelect':this.ifSelect.MenuItem2classTrue==='true'}"
@@ -92,7 +93,7 @@
                     </li>
                     <li>
                         <a class="a_js2" :class="{'HeaderMenuItemSelect':this.ifSelect.MenuItem4classTrue==='true'}"
-                           href="javascript:;">CASE STUDIE</a>
+                           href="/caseStudies">CASE STUDIE</a>
                     </li>
                     <li>
                         <a class="a_js2" :class="{'HeaderMenuItemSelect':this.ifSelect.MenuItem5classTrue==='true'}"

@@ -4,7 +4,9 @@ import index from '@/view/index'
 import carres from '@/view/carres'
 import contact from '@/view/contact'
 import blog from '@/view/blog'
+import caseStudies from '@/view/caseStudies'
 import test from '@/view/template'
+import sentence from '@/components/sentence'
 
 Vue.use(Router)
 
@@ -34,6 +36,16 @@ export default new Router({
       path: '/blog',
       name: 'blog',
       component: blog
+    },
+    {
+      path: '/caseStudies',
+      name: 'caseStudies',
+      component: caseStudies
+    },
+    {
+      path: '/sentence',
+      name: 'sentence',
+      component: sentence
     }
   ],
   mode:'history'   //去除#号

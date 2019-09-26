@@ -3,7 +3,7 @@
         <el-col>
             <CommonHeader :ifSelect="ifSelect"></CommonHeader>
             <!--顶部-->
-            <el-row class="contactPage">
+            <el-row class="contactPage BG-BB-LG">
                 <el-col>
                     <el-row class="topHeight">
                         <el-col>
@@ -49,7 +49,7 @@
                                 <el-col :xs="24" :sm="24" :md="12" :lg="12">
                                     <!--姓名-->
                                     <el-row>
-                                        <el-col :xs="2" :sm="1" :md="1" :lg="2">&nbsp;</el-col>
+                                        <el-col :xs="1" :sm="1" :md="1" :lg="2">&nbsp;</el-col>
                                         <el-col :xs="22" :sm="22" :md="22" :lg="21">
                                             <div class="item">
                                                 <div class="title">
@@ -185,7 +185,7 @@
     }
 
     .contactPage {
-        background-color: #173147;
+        /*background-color: #173147;*/
     }
 
     .contactPage .topHeight {

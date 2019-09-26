@@ -1,5 +1,5 @@
 /* 媒体查询文件 */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     .common-footer-top-1 .title h3,
     .common-footer-top-2 .title h3,
     .common-footer-top-3 .title h3{
@@ -17,7 +17,92 @@
     .common-footer-top-3 .title h3{
         font-size: 24px!important;
     }
+
+    .page-title{
+        font-size: 20px!important;
+    }
+
+    .sentence-quote-font-size {
+        font-size: 16px !important;
+    }
+
+    .sentence-author {
+        width: 70px !important;
+    }
+
+    .sentence-name {
+        font-size: 15px !important;
+    }
+
+    .sentence-title,
+    .sentence-company {
+        font-size: 14px !important;
+    }
+
+    .sentence-icon img {
+        width: 18px !important;
+    }
+
+    .sentence-icon-inner {
+        width: 42px !important;
+        height: 42px !important;
+        margin-top: 5px;
+    }
 }
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    .common-footer-top-1 .title h3,
+    .common-footer-top-2 .title h3,
+    .common-footer-top-3 .title h3{
+        max-width: 300px!important;
+    }
+
+    .common-footer-top-1 .foot-top-img img,
+    .common-footer-top-2 .foot-top-img img,
+    .common-footer-top-3 .foot-top-img img{
+        max-width: 350px!important;
+    }
+
+    .common-footer-top-1 .title h3,
+    .common-footer-top-2 .title h3,
+    .common-footer-top-3 .title h3{
+        font-size: 24px!important;
+    }
+
+    .page-title{
+        font-size: 20px!important;
+    }
+
+
+    .sentence-quote-font-size {
+        font-size: 16px !important;
+    }
+
+    .sentence-author {
+        width: 70px !important;
+    }
+
+    .sentence-name {
+        font-size: 15px !important;
+    }
+
+    .sentence-title,
+    .sentence-company {
+        font-size: 14px !important;
+    }
+
+    .sentence-icon img {
+        width: 18px !important;
+    }
+
+    .sentence-icon-inner {
+        width: 42px !important;
+        height: 42px !important;
+        margin-top: 10px;
+    }
+
+}
+
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
     .page-content{
