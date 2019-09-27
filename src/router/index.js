@@ -4,6 +4,7 @@ import index from '@/view/index'
 import carres from '@/view/carres'
 import contact from '@/view/contact'
 import blog from '@/view/blog'
+import team from '@/view/team'
 import caseStudies from '@/view/caseStudies'
 import PPCManagement from '@/view/PPCManagement'
 import test from '@/view/template'
@@ -52,6 +53,11 @@ export default new Router({
       path: '/PPCManagement',
       name: 'PPCManagement',
       component: PPCManagement
+    },
+    {
+      path: '/team',
+      name: 'team',
+      component: team
     }
   ],
   mode:'history'   //去除#号

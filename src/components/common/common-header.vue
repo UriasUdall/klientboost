@@ -16,7 +16,7 @@
                             <a class="a1" href="javascript:;">WHAT WE DO</a>
                         </li>
                         <li>
-                            <a class="a1" href="javascript:;">TEAM</a>
+                            <a class="a1" href="/team">TEAM</a>
                         </li>
                         <li>
                             <a class="a1" href="/caseStudies">CASE STUDIES</a>
@@ -89,7 +89,7 @@
                     </li>
                     <li>
                         <a class="a_js2" :class="{'HeaderMenuItemSelect':this.ifSelect.MenuItem3classTrue==='true'}"
-                           href="javascript:;">TEAM</a>
+                           href="/team">TEAM</a>
                     </li>
                     <li>
                         <a class="a_js2" :class="{'HeaderMenuItemSelect':this.ifSelect.MenuItem4classTrue==='true'}"

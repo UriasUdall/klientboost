@@ -11,6 +11,7 @@
   import '@/assets/style/media/media-common.css'
   import '@/assets/style/media/media-carres.css'
   import '@/assets/style/media/media-index.css'
+  import '@/assets/style/media/media-team.css'
   import '@/assets/style/media/media-PPCManamengent.css'
   import '@/assets/style/public.css'
   import 'element-ui/lib/theme-chalk/display.css'
@@ -62,6 +63,5 @@
         -moz-osx-font-smoothing: grayscale;
         text-align: center;
         color: #2c3e50;
-        /*margin-top: 60px;*/
     }
 </style>
