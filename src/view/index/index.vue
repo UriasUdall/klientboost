@@ -1,35 +1,9 @@
 <template>
     <el-row class="index">
         <el-col>
-            <el-row>
-                <el-col>
-                    <CommonHeader :ifSelect="ifSelect"></CommonHeader>
-                </el-col>
-            </el-row>
-            <!--首部火箭背景-->
-            <el-row>
-                <el-col>
-                    <el-row id="hero">
-                        <el-col class="star"></el-col>
-                        <el-col class="small-clouds hidden-xs-only"></el-col>
-                        <el-col class="content">
-                            <div class="rocket">
-                                <img src="../../assets/images/index/hero-rocket.png" alt="Klientboost Rocket">
-                            </div>
-                            <h1>Your PPC&Paid Social Performance
-                                <br>
-                                Is About To Take Off</h1>
-                            <a href="#">GET MY FREE PROPOSAL</a>
-                        </el-col>
-                        <el-col>
-                            <el-row>
-                                <el-col class="footer-BB-img">&nbsp;</el-col>
-                            </el-row>
-                        </el-col>
-                    </el-row>
-                </el-col>
-            </el-row>
+            <CommonHeader :ifSelect="ifSelect"></CommonHeader>
 
+            <TheCover :sentence="sentence"></TheCover>
             <!--中间三到五张图片转变-->
             <el-row>
                 <!--空格占位-->
@@ -189,19 +163,11 @@
 
 
             <!--底部样式-->
-            <el-row>
-                <el-col>
-                    <CommonFooterTop :title="title" :pd="pd"></CommonFooterTop>
-                </el-col>
-            </el-row>
+            <CommonFooterTop :title="title" :pd="pd"></CommonFooterTop>
             <el-row>
                 <el-col class="footer-BU-img">&nbsp;</el-col>
             </el-row>
-            <el-row>
-                <el-col>
-                    <CommonFooter></CommonFooter>
-                </el-col>
-            </el-row>
+            <CommonFooter></CommonFooter>
         </el-col>
     </el-row>
 </template>
@@ -212,6 +178,7 @@
   import CommonFooterTop from '@/components/common/common-footer-top-1'
   import CommonHeader from '@/components/common/common-header'
   import Sentence from '@/components/sentence'
+  import TheCover from '@/components/theCover'
 
   export default {
     name: 'index',
@@ -219,11 +186,13 @@
       CommonFooter,
       CommonHeader,
       CommonFooterTop,
-      Sentence
+      Sentence,
+      TheCover
     },
     data () {
       return {
         pd: 120,
+        sentence: 'Your PPC & Paid Social Performance<br/>Is About To Take Off',
         isNowPage: true,
         content: [{
           quoteText: '"KlientBoost isn\'t your typical crapshoot,dime a dozen PPC agency.They actually understand quality traffic and more importantly,the<strong>vitalness of conversion.</strong> If you have a chance to work with them,take it.<strong>They\'re marketing unicorns.</strong>"',
@@ -233,14 +202,14 @@
           linkTo: '',
           authorCompany: 'Unbounce'
         },
-        {
-          quoteText: '"I thought I knew everything I could about AdWords, but after spending just 5 minutes with these guys,I realized how much more I had to learn.KlientBoost does<strong>more than just produce results,</strong>they teach you along the way."',
-          authorImg: require('../../assets/images/index/9aefb1e0f33bc33eeadff6ab053395c8.jpeg'),
-          authorName: 'Thue Madsen',
-          autorText: 'Marketing Ops. Manager @',
-          linkTo: '',
-          authorCompany: 'Kissmetrics'
-        }
+          {
+            quoteText: '"I thought I knew everything I could about AdWords, but after spending just 5 minutes with these guys,I realized how much more I had to learn.KlientBoost does<strong>more than just produce results,</strong>they teach you along the way."',
+            authorImg: require('../../assets/images/index/9aefb1e0f33bc33eeadff6ab053395c8.jpeg'),
+            authorName: 'Thue Madsen',
+            autorText: 'Marketing Ops. Manager @',
+            linkTo: '',
+            authorCompany: 'Kissmetrics'
+          }
         ],
         ifSelect: {
           MenuItem1classTrue: 'true',
@@ -272,83 +241,6 @@
         margin-top: 80px;
     }
 
-    /*首部火箭背景*/
-    .index #hero {
-        background-color: #11253c;
-        color: #fff;
-        /*背景渐变*/
-        background-image: linear-gradient(-180deg, #0e1f35, #21455c);
-        /*height: 811px;*/
-        position: relative;
-        margin: 0;
-        padding: 0;
-    }
-
-    .index .star {
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        height: 550px;
-        background-image: url("../../assets/images/index/412ff5165675da0090654d7bc444f725.png");
-        background-size: 640px, 550px;
-        background-repeat: no-repeat;
-    }
-
-    .index .small-clouds {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-image: url("../../assets/images/index/21898f85c5220f8a6631726c247b2ed0.png");
-        background-size: 150px;
-        background-repeat: no-repeat;
-        background-position: 100% 40%;
-    }
-
-    .index .content {
-        position: relative;
-        z-index: 10;
-        text-align: center;
-    }
-
-    .index .content .rocket {
-        padding-top: 145px;
-        margin: 0 auto 35px;
-        width: 110px;
-    }
-
-    .index .content h1 {
-        font-size: 3.7rem;
-    }
-
-    .index .content .rocket img {
-        width: 100%;
-    }
-
-    .index .content a {
-        margin: 38px auto 0px;
-        width: 300px;
-        height: 60px;
-        /*font-size: 1.5rem;*/
-        line-height: 60px;
-        border-width: 3px;
-        padding: 0;
-        color: #fff;
-        text-decoration: none;
-        background: #ff5056;
-        text-align: center;
-        letter-spacing: .06rem;
-        border-radius: 8px;
-        border: 0;
-        font-weight: 700;
-        border-bottom: 2px solid #ff272f;
-        vertical-align: middle;
-        cursor: pointer;
-        display: inline-block;
-    }
 
     /*中间三到五张图片转变 */
     .index .logo-image {
@@ -421,7 +313,6 @@
     /*    vertical-align: middle;*/
     /*    margin-top: 30%;*/
     /*}*/
-
 
 
     /*图文结合三大组件*/

@@ -1,0 +1,72 @@
+/* 媒体查询文件 */
+@media screen and (max-width: 600px) {
+    .PPCManagement .ppc-faq {
+        max-width: 750px !important;
+    }
+
+    .PPCManagement .ppc-spec h2,
+    .PPCManagement .ppc-list h2,
+    .PPCManagement .ppc-icon h2,
+    .PPCManagement .ppc-faq h2,
+    .PPCManagement .quick h2,
+    .PPCManagement .ppc-case h2 {
+        font-size: 18px!important;
+    }
+
+    .PPCManagement .quick .content-text{
+        font-size: 15px!important;
+    }
+
+    .PPCManagement .ppc-list .list-ul ul{
+        width: 70%!important;
+        margin-left: 20%;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    .PPCManagement .ppc-faq {
+        max-width: 750px !important;
+    }
+
+    .PPCManagement .ppc-spec h2,
+    .PPCManagement .ppc-list h2,
+    .PPCManagement .ppc-icon h2,
+    .PPCManagement .ppc-faq h2,
+    .PPCManagement .quick h2,
+    .PPCManagement .ppc-case h2 {
+        font-size: 18px!important;
+    }
+
+    .PPCManagement .quick .content-text{
+        font-size: 15px!important;
+    }
+
+    .PPCManagement .ppc-list .list-ul ul{
+        width: 60%!important;
+        margin-left: 25%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .PPCManagement .ppc-faq {
+        max-width: 750px !important;
+    }
+
+    .PPCManagement .ppc-icon .icon-ku{
+        max-width: 740px!important;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .PPCManagement .ppc-faq {
+        max-width: 970px !important;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1920px) {
+
+}
+
+@media screen and (min-width: 1920px) {
+
+}

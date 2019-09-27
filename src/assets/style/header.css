@@ -5,7 +5,9 @@
   font-size: 0px
 }
 
-
+.common-header{
+    float: left;
+}
 
 
 /*PC端 1*/
