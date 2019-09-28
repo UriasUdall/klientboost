@@ -171,8 +171,8 @@
                     MenuItem3classTrue: 'false',
                     MenuItem4classTrue: 'false',
                     MenuItem5classTrue: 'false',
-                    MenuItem6classTrue: 'false',
-                    MenuItem7classTrue: 'true',
+                    MenuItem6classTrue: 'true',
+                    MenuItem7classTrue: 'false',
                 },
                 photo: [
                     /*1*/

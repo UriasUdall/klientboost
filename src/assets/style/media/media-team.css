@@ -1,26 +1,27 @@
-@media screen and (max-width: 768px){
-  .teamPage .page-content .littleImg .logo,
-  .teamPage .page-content .littleImg .heart1,
-  .teamPage .page-content .littleImg .heart2{
-    height: 22px!important;
-  }
+/* 媒体查询文件 */
+@media screen and (max-width: 768px) {
+    .team .page-content .big-title-1 p {
+        font-size: 14px!important;
+    }
+    .team .page-content .show-img img{
+        height: 200px!important;
+    }
 }
-@media screen and (min-width: 768px) and (max-width: 960px){
-  .teamPage .page-content .littleImg .logo,
-  .teamPage .page-content .littleImg .heart1,
-  .teamPage .page-content .littleImg .heart2{
-    height: 22px!important;
-  }
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .team .page-content .big-title-1 p {
+        font-size: 15px!important;
+    }
 }
-@media screen and (min-width: 960px) and (max-width: 992px){
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
 
 }
-@media screen and (min-width: 992px) and (max-width: 1200px){
+
+@media screen and (min-width: 1200px) and (max-width: 1920px) {
 
 }
-@media screen and (min-width: 1200px) and (max-width: 1920px){
 
-}
-@media screen and (min-width: 1920px){
+@media screen and (min-width: 1920px) {
 
 }

@@ -1,0 +1,36 @@
+.el-dialog {
+    background-image: linear-gradient(60deg, #132537, #2f6681)!important;
+    width: 810px!important;
+    padding: 10px!important;
+    border-radius: 8px!important;
+}
+
+@media screen and (max-width: 850px) {
+    .el-dialog{
+        width: auto!important;
+    }
+}
+
+
+.el-dialog__body{
+    padding: 0px 25px!important;
+}
+
+
+.el-select{
+    width: 100%!important;
+}
+
+.el-input__inner{
+    border-radius: 0px!important;
+}
+
+.el-dialog__close {
+    color: white!important;
+    font-size: 25px!important;
+}
+
+
+el-input{
+    padding-top: 15px!important;
+}

@@ -175,10 +175,10 @@
           MenuItem1classTrue: 'false',
           MenuItem2classTrue: 'false',
           MenuItem3classTrue: 'false',
-          MenuItem4classTrue: 'false',
+          MenuItem4classTrue: 'true',
           MenuItem5classTrue: 'false',
           MenuItem6classTrue: 'false',
-          MenuItem7classTrue: 'true',
+          MenuItem7classTrue: 'false',
         },
         title: 'Over <strong>445 businesses</strong> got a proposal from us in <strong>August, 2019</strong>',
         picInfo: [

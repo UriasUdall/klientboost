@@ -3,7 +3,7 @@
     <el-row class="sentence">
         <el-col>
             <!--逗号分隔符-->
-            <el-row>
+            <el-row class="dot">
                 <el-col>
                     <div class="border"></div>
                     <div class="sentence-icon">

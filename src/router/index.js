@@ -4,10 +4,10 @@ import index from '@/view/index'
 import carres from '@/view/carres'
 import contact from '@/view/contact'
 import blog from '@/view/blog'
-import team from '@/view/team'
 import caseStudies from '@/view/caseStudies'
 import PPCManagement from '@/view/PPCManagement'
 import test from '@/view/template'
+import team from '@/view/team'
 import sentence from '@/components/sentence'
 
 Vue.use(Router)

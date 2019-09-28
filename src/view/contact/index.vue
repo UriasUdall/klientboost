@@ -47,74 +47,83 @@
 
                                 <!--输入框-->
                                 <el-col :xs="24" :sm="24" :md="12" :lg="12">
-                                    <!--姓名-->
-                                    <el-row>
-                                        <el-col :xs="1" :sm="1" :md="1" :lg="2">&nbsp;</el-col>
-                                        <el-col :xs="22" :sm="22" :md="22" :lg="21">
-                                            <div class="item">
-                                                <div class="title">
-                                                    Name
-                                                    <span class="conStar">*</span>
+                                    <el-form :model="dataForm" :rules="dataRule">
+                                        <!--姓名-->
+                                        <el-row>
+                                            <el-col :xs="1" :sm="1" :md="1" :lg="2">&nbsp;</el-col>
+                                            <el-col :xs="22" :sm="22" :md="22" :lg="21">
+                                                <div class="item">
+                                                    <div class="title">
+                                                        Name
+                                                        <span class="conStar">*</span>
+                                                    </div>
+                                                    <div class="field">
+                                                        <el-form-item prop="name">
+                                                            <el-input type="text" v-model="dataForm.name" name="name"/>
+                                                        </el-form-item>
+                                                    </div>
                                                 </div>
-                                                <div class="field">
-                                                    <input type="text">
+                                            </el-col>
+                                        </el-row>
+                                        <!--邮箱-->
+                                        <el-row>
+                                            <el-col :xs="1" :sm="1" :md="1" :lg="2">&nbsp;</el-col>
+                                            <el-col :xs="22" :sm="22" :md="22" :lg="21">
+                                                <div class="item">
+                                                    <div class="title">
+                                                        Email
+                                                        <span class="conStar">*</span>
+                                                    </div>
+                                                    <div class="field">
+                                                        <el-form-item prop="email">
+                                                            <el-input type="text" v-model="dataForm.email"
+                                                                      name="email"/>
+                                                        </el-form-item>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </el-col>
-                                    </el-row>
-                                    <!--邮箱-->
-                                    <el-row>
-                                        <el-col :xs="1" :sm="1" :md="1" :lg="2">&nbsp;</el-col>
-                                        <el-col :xs="22" :sm="22" :md="22" :lg="21">
-                                            <div class="item">
-                                                <div class="title">
-                                                    Email
-                                                    <span class="conStar">*</span>
+                                            </el-col>
+                                        </el-row>
+                                        <!--电话-->
+                                        <el-row>
+                                            <el-col :xs="1" :sm="1" :md="1" :lg="2">&nbsp;</el-col>
+                                            <el-col :xs="22" :sm="22" :md="22" :lg="21">
+                                                <div class="item">
+                                                    <div class="title">
+                                                        Phone
+                                                        <span class="conStar">*</span>
+                                                    </div>
+                                                    <div class="field">
+                                                        <el-form-item prop="tel">
+                                                            <el-input type="text" v-model="dataForm.tel" name="tel"/>
+                                                        </el-form-item>
+                                                    </div>
                                                 </div>
-                                                <div class="field">
-                                                    <input type="text">
+                                            </el-col>
+                                        </el-row>
+                                        <!--详细信息-->
+                                        <el-row>
+                                            <el-col :xs="1" :sm="1" :md="1" :lg="2">&nbsp;</el-col>
+                                            <el-col :xs="22" :sm="22" :md="22" :lg="21">
+                                                <div class="item">
+                                                    <div class="title">
+                                                        Message
+                                                    </div>
+                                                    <div class="messageField">
+                                                        <textarea v-model="dataForm.text" name="text"></textarea>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </el-col>
-                                    </el-row>
-                                    <!--电话-->
-                                    <el-row>
-                                        <el-col :xs="1" :sm="1" :md="1" :lg="2">&nbsp;</el-col>
-                                        <el-col :xs="22" :sm="22" :md="22" :lg="21">
-                                            <div class="item">
-                                                <div class="title">
-                                                    Phone
-                                                    <span class="conStar">*</span>
-                                                </div>
-                                                <div class="field">
-                                                    <input type="text">
-                                                </div>
-                                            </div>
-                                        </el-col>
-                                    </el-row>
-                                    <!--详细信息-->
-                                    <el-row>
-                                        <el-col :xs="1" :sm="1" :md="1" :lg="2">&nbsp;</el-col>
-                                        <el-col :xs="22" :sm="22" :md="22" :lg="21">
-                                            <div class="item">
-                                                <div class="title">
-                                                    Message
-                                                    <span class="conStar">*</span>
-                                                </div>
-                                                <div class="messageField">
-                                                    <textarea></textarea>
-                                                </div>
-                                            </div>
-                                        </el-col>
-                                    </el-row>
-                                    <!--send按钮-->
-                                    <el-row>
-                                        <el-col :xs="1" :sm="1" :md="1" :lg="2">&nbsp;</el-col>
-                                        <el-col :xs="22" :sm="22" :md="22" :lg="21">
-                                            <input type="submit" value="SEND" class="btn-BWCR sendBtn"></input>
-                                        </el-col>
-                                    </el-row>
+                                            </el-col>
+                                        </el-row>
+                                        <!--send按钮-->
+                                        <el-row>
+                                            <el-col :xs="1" :sm="1" :md="1" :lg="2">&nbsp;</el-col>
+                                            <el-col :xs="22" :sm="22" :md="22" :lg="21">
+                                                <input type="submit" value="SEND" class="btn-BWCR sendBtn"></input>
+                                            </el-col>
+                                        </el-row>
+                                    </el-form>
                                 </el-col>
+
                                 <!--信息-->
                                 <el-col :md="12" :lg="12" class="hidden-sm-and-down">
                                     <div class="information2 mt-50">
@@ -153,6 +162,7 @@
   import CommonHeader from '@/components/common/common-header'
   import CommonFooter from '@/components/common/common-footer'
   import CommonFooterTop from '@/components/common/common-footer-top-1'
+  import {isMobile, isEmail, isName, isPhone} from '@/utils/validate'
 
   export default {
     name: 'index',
@@ -162,6 +172,27 @@
       CommonFooterTop
     },
     data () {
+      var validateAdminName = (rule, value, callback) => {
+        if (!isName(value)) {
+          callback(new Error('请输入合法的姓名'))
+        } else {
+          callback()
+        }
+      }
+      var validateEmail = (rule, value, callback) => {
+        if (!isEmail(value)) {
+          callback(new Error('请输入合法的邮箱'))
+        } else {
+          callback()
+        }
+      }
+      var validateMobile = (rule, value, callback) => {
+        if (!isMobile(value) && !isPhone(value)) {
+          callback(new Error('手机号格式错误'))
+        } else {
+          callback()
+        }
+      }
       return {
         pd: 60,
         ifSelect: {
@@ -173,7 +204,27 @@
           MenuItem6classTrue: 'false',
           MenuItem7classTrue: 'true',
         },
-        title: 'Over <strong>445 businesses</strong> got a proposal from us in <strong>August, 2019</strong>'
+        title: 'Over <strong>445 businesses</strong> got a proposal from us in <strong>August, 2019</strong>',
+        dataForm: {
+          name: '',
+          email: '',
+          tel: '',
+          text: '',
+        },
+        dataRule: {
+          name: [
+            {required: true, message: '姓名不能为空', trigger: 'blur'},
+            {validator: validateAdminName, trigger: 'blur'}
+          ],
+          email: [
+            {required: true, message: '邮箱不能为空', trigger: 'blur'},
+            {validator: validateEmail, trigger: 'blur'}
+          ],
+          tel: [
+            {required: true, message: '手机号不能为空', trigger: 'blur'},
+            {validator: validateMobile, trigger: 'blur'}
+          ]
+        }
       }
     }
   }
@@ -300,7 +351,19 @@
         padding: 20px 35px;
         font-size: 22px;
         float: left;
+        margin-top: 15px;
         margin-bottom: 40px;
         font-weight: 600;
+    }
+</style>
+
+<style>
+    .el-input {
+        padding-top: 15px !important;
+    }
+
+    .el-form-item__error {
+        font-size: 20px !important;
+        padding-top: 24px !important;
     }
 </style>

@@ -9,11 +9,12 @@
   import '@/assets/style/media/media-contact.css'
   import '@/assets/style/media/media-blog.css'
   import '@/assets/style/media/media-common.css'
+  import '@/assets/style/media/media-team.css'
   import '@/assets/style/media/media-carres.css'
   import '@/assets/style/media/media-index.css'
-  import '@/assets/style/media/media-team.css'
   import '@/assets/style/media/media-PPCManamengent.css'
   import '@/assets/style/public.css'
+  import '@/assets/style/resetElementUI.css'
   import 'element-ui/lib/theme-chalk/display.css'
 
   export default {
@@ -63,5 +64,6 @@
         -moz-osx-font-smoothing: grayscale;
         text-align: center;
         color: #2c3e50;
+        /*margin-top: 60px;*/
     }
 </style>
