@@ -1,17 +1,36 @@
 /* 媒体查询文件 */
 @media screen and (max-width: 768px) {
-    .team .page-content .big-title-1 p {
-        font-size: 14px!important;
-    }
-    .team .page-content .show-img img{
-        height: 200px!important;
-    }
+  .team .page-content .big-title-1 p {
+    font-size: 14px !important;
+  }
+
+  .team .page-content .show-img img {
+    height: 200px !important;
+  }
+
+  .team .people img {
+    display: block;
+    width: 200px!important;
+    height: 200px!important;
+    margin: 0 auto 25px;
+    border-radius: 999px;
+    background: #f1f3f4;
+  }
+
+  .team .people .header,
+  .team .people .socialNetworks{
+    text-align: center!important;
+  }
+
+  .team .people .header .border{
+    margin-left: auto!important;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
-    .team .page-content .big-title-1 p {
-        font-size: 15px!important;
-    }
+  .team .page-content .big-title-1 p {
+    font-size: 15px !important;
+  }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
