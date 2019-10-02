@@ -171,8 +171,8 @@
                 pd: 60,
                 ifSelect: {
                     MenuItem1classTrue: 'false',
-                    MenuItem2classTrue: 'true',
-                    MenuItem3classTrue: 'false',
+                    MenuItem2classTrue: 'false',
+                    MenuItem3classTrue: 'true',
                     MenuItem4classTrue: 'false',
                     MenuItem5classTrue: 'false',
                     MenuItem6classTrue: 'false',
