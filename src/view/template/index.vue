@@ -6,9 +6,9 @@
             <!--顶部结束-->
 
             <!--主体开始-->
-            <!-- 页面大标题 -->
             <el-row class=" BG-BB-LG">
                 <el-col class="container" style="padding: 0px 15px">
+                  <!-- 页面大标题 -->
                     <el-row>
                         <el-col>
                             <div class="whiteBorder MT-80-I"></div>
@@ -16,7 +16,7 @@
                             <div class="whiteBorder"></div>
                         </el-col>
                     </el-row>
-
+                  <!-- 页面大白框 -->
                     <el-row class="page-content">
                         <el-col>
                             <br/><h1>This Is The Page Content!!!</h1><br/>
@@ -28,8 +28,6 @@
                     </el-row>
                 </el-col>
             </el-row>
-
-
             <!--主体结束-->
 
             <!--底部开始-->

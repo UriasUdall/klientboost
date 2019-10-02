@@ -2,6 +2,7 @@
     <el-row >
         <el-col>
             <el-row class="common-header" style="height: 82px;z-index:45">
+
                 <!--PC端导航开始-->
                 <el-col class="head hidden-xs-only" id="head">
                     <el-row>
@@ -41,6 +42,7 @@
                     </el-row>
                 </el-col>
                 <!--PC端导航结束-->
+
                 <!--移动端导航开始-->
                 <el-col class="moblie_head hidden-md-and-up">
                     <el-row>
@@ -122,13 +124,12 @@
                         </ul>
                     </div>
                 </el-col>
-
                 <!--移动端导航结束-->
+
             </el-row>
             <GetProposal v-if="dialogVisible" ref="getProposal"></GetProposal>
         </el-col>
     </el-row>
-
 </template>
 
 <script>
@@ -177,9 +178,6 @@
             $('.a_txt').find('.div1').stop(true, false).delay(0).animate({
               opacity: '0.9'
             }, 100)
-            $('.a_txt').find('.div2').stop(true, false).delay(0).animate({
-              opacity: '1'
-            }, 100)
             $('.a_txt').find('.div3').stop(true, false).delay(0).animate({
               right: '0'
             }, 100)
@@ -195,26 +193,10 @@
             $('.a_txt').find('.div1').stop(true, false).delay(0).animate({
               opacity: '0'
             }, 100)
-            $('.a_txt').find('.div2').stop(true, false).delay(0).animate({
-              opacity: '0'
-            }, 100)
             $('.a_txt').find('.div3').stop(true, false).delay(0).animate({
               right: '-50%'
             }, 100)
-          }
-        )
-        // //点击顶级菜单展开关闭子导航
-        // $('.div3 ul li').click(function() {
-        //   $('.a_txt2:visible').slideUp().prev().removeClass('a_js2_on');
-        //   var subnav = $(this).find('.a_txt2');
-        //   console.log(subnav.is(':hidden'))
-        //   if(subnav.is(':hidden')) {
-        //     subnav.slideDown().prev().addClass('a_js2_on');
-        //   } else {
-        //     subnav.slideUp().prev().removeClass('a_js2_on');
-        //   };
-        // })
-
+          })
       })
     }
   }

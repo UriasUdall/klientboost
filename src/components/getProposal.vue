@@ -85,13 +85,10 @@
                             </el-col>
                         </el-row>
                     </el-col>
-
-
                 </el-row>
                 <div>
                     <button @click="next()" v-if="active===0" class="btn-BRCW">CONTINUE ></button>
                     <button @click="next()" v-if="active===1" class="btn-BRCW">LAST-STEP ></button>
-                    <!--                    -->
                 </div>
                 <el-row>
                     <el-col v-if="active===0">
